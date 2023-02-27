@@ -64,7 +64,7 @@ let qntdeVendasPorProduto = pedidosProdutos.join(
     (left) => left.idProduto,
     (right) => right.id,
     (left,right) => {
-        return {idProduto: left.idProduto, nomeProduto: right.nome, numPedidos: left.numPedidos, valor: ((right.preco*left.numPedidos).toFixed(2))}
+        return {idProduto: left.idProduto, nomeProduto: right.nome, numPedidos: left.numPedidos, valor: ((right.preco*left.numPedidos))}
     }
 );
 
