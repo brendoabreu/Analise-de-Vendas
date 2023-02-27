@@ -22,5 +22,7 @@ let qtdePedidosPorCliente = pedidosClientes.join(
     }
 );
 
-//console.log(qtdePedidosPorCliente.head(5).toString());
-//console.log(listaClientes.head(5).toString());
+let pedidosOrdemDecrescente = qtdePedidosPorCliente.orderByDescending(row => row.NumPedidos);
+let pedidosOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.NumPedidos);
+
+console.log(pedidosOrdemDecrescente.head(10).toString());
