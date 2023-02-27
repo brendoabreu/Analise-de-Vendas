@@ -5,9 +5,10 @@ const DF = require('data-forge-fs');
 const listaPedidos = DF.readFileSync('orders.csv').parseCSV().parseInts('quantidade');
 const listaClientes = DF.readFileSync('clients.csv').parseCSV();
 const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
+const listaProdutos = DF.readFileSync('products.csv').parseCSV();
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('2.1 vendas-por-vendedores-decrescente.csv');
+    dados.asCSV().writeFile('3.0 ranking-vendas-produtos.csv');
 }
 
 let pedidosClientes = listaPedidos
@@ -27,8 +28,8 @@ let qtdePedidosPorCliente = pedidosClientes.join(
     }
 );
 
-let pedidosOrdemDecrescente = qtdePedidosPorCliente.orderByDescending(row => row.numPedidos);
-let pedidosOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.numPedidos);
+let pedidosClientesOrdemDecrescente = qtdePedidosPorCliente.orderByDescending(row => row.numPedidos);
+let pedidosClientesOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.numPedidos);
 
 let pedidosVendedor = listaPedidos
     .groupBy(row => row['vendedor'])
@@ -47,7 +48,27 @@ let qntdeVendasPorVendedor = pedidosVendedor.join(
     }
 );
 
-let vendasOrdemDecrescente = qntdeVendasPorVendedor.orderByDescending(row => row.numVendas);
-let vendasOrdemCrescente = qntdeVendasPorVendedor.orderBy(row => row.numVendas);
+let vendasVendedorOrdemDecrescente = qntdeVendasPorVendedor.orderByDescending(row => row.numVendas);
+let vendasVendedorOrdemCrescente = qntdeVendasPorVendedor.orderBy(row => row.numVendas);
 
-escreveArquivo(vendasOrdemDecrescente);
+let pedidosProdutos = listaPedidos
+    .groupBy(row => row['produto'])
+    .select(group => ({
+        idProduto: group.first()['produto'],
+        numPedidos: group.deflate(row => row['quantidade']).sum()
+    }))
+    .inflate();
+
+let qntdeVendasPorProduto = pedidosProdutos.join(
+    listaProdutos,
+    (left) => left.idProduto,
+    (right) => right.id,
+    (left,right) => {
+        return {idProduto: left.idProduto, nomeProduto: right.nome, numPedidos: left.numPedidos}
+    }
+);
+
+let vendasProdutoOrdemDecrescente = qntdeVendasPorProduto.orderByDescending(row => row.numPedidos);
+let vendasProdutoOrdemCrescente = qntdeVendasPorProduto.orderBy(row => row.numPedidos);
+
+escreveArquivo(vendasProdutoOrdemDecrescente);
