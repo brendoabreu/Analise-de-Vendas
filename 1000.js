@@ -8,7 +8,7 @@ const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
 const listaProdutos = DF.readFileSync('products.csv').parseCSV().parseFloats('preco');
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('3.1 ranking-vendas-produtos-valor.csv');
+    dados.asCSV().writeFile('3.1 e 3.2 ranking-vendas-produtos-valor.csv');
 }
 
 let pedidosClientes = listaPedidos
