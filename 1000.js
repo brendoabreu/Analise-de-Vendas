@@ -5,6 +5,10 @@ const DF = require('data-forge-fs');
 const listaPedidos = DF.readFileSync('orders.csv').parseCSV().parseInts('quantidade');
 const listaClientes = DF.readFileSync('clients.csv').parseCSV();
 
+const escreveArquivo = (dados) => {
+    dados.asCSV().writeFile('1.2 ordem-decrescente.csv');
+}
+
 let pedidosClientes = listaPedidos
     .groupBy(row => row['cliente'])
     .select(group => ({
@@ -25,4 +29,4 @@ let qtdePedidosPorCliente = pedidosClientes.join(
 let pedidosOrdemDecrescente = qtdePedidosPorCliente.orderByDescending(row => row.NumPedidos);
 let pedidosOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.NumPedidos);
 
-console.log(pedidosOrdemDecrescente.head(10).toString());
+escreveArquivo(pedidosOrdemDecrescente);
