@@ -7,7 +7,7 @@ const listaClientes = DF.readFileSync('clients.csv').parseCSV();
 const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('2.0 vendas-por-vendedores.csv');
+    dados.asCSV().writeFile('2.1 vendas-por-vendedores-decrescente.csv');
 }
 
 let pedidosClientes = listaPedidos
@@ -27,8 +27,8 @@ let qtdePedidosPorCliente = pedidosClientes.join(
     }
 );
 
-let pedidosOrdemDecrescente = qtdePedidosPorCliente.orderByDescending(row => row.NumPedidos);
-let pedidosOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.NumPedidos);
+let pedidosOrdemDecrescente = qtdePedidosPorCliente.orderByDescending(row => row.numPedidos);
+let pedidosOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.numPedidos);
 
 let pedidosVendedor = listaPedidos
     .groupBy(row => row['vendedor'])
@@ -47,4 +47,7 @@ let qntdeVendasPorVendedor = pedidosVendedor.join(
     }
 );
 
-escreveArquivo(qntdeVendasPorVendedor);
+let vendasOrdemDecrescente = qntdeVendasPorVendedor.orderByDescending(row => row.numVendas);
+let vendasOrdemCrescente = qntdeVendasPorVendedor.orderBy(row => row.numVendas);
+
+escreveArquivo(vendasOrdemDecrescente);
