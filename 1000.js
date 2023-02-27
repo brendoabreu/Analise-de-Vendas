@@ -5,10 +5,10 @@ const DF = require('data-forge-fs');
 const listaPedidos = DF.readFileSync('orders.csv').parseCSV().parseInts('quantidade');
 const listaClientes = DF.readFileSync('clients.csv').parseCSV();
 const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
-const listaProdutos = DF.readFileSync('products.csv').parseCSV();
+const listaProdutos = DF.readFileSync('products.csv').parseCSV().parseFloats('preco');
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('3.0 ranking-vendas-produtos.csv');
+    dados.asCSV().writeFile('3.1 ranking-vendas-produtos-valor.csv');
 }
 
 let pedidosClientes = listaPedidos
@@ -64,11 +64,14 @@ let qntdeVendasPorProduto = pedidosProdutos.join(
     (left) => left.idProduto,
     (right) => right.id,
     (left,right) => {
-        return {idProduto: left.idProduto, nomeProduto: right.nome, numPedidos: left.numPedidos}
+        return {idProduto: left.idProduto, nomeProduto: right.nome, numPedidos: left.numPedidos, valor: ((right.preco*left.numPedidos).toFixed(2))}
     }
 );
 
 let vendasProdutoOrdemDecrescente = qntdeVendasPorProduto.orderByDescending(row => row.numPedidos);
 let vendasProdutoOrdemCrescente = qntdeVendasPorProduto.orderBy(row => row.numPedidos);
 
-escreveArquivo(vendasProdutoOrdemDecrescente);
+let valorProdutoOrdemDecrescente = qntdeVendasPorProduto.orderByDescending(row => row.valor);
+let valorProdutoOrdemCrescente = qntdeVendasPorProduto.orderBy(row => row.valor);
+
+escreveArquivo(valorProdutoOrdemDecrescente);
