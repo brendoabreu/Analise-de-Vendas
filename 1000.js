@@ -8,7 +8,7 @@ const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
 const listaProdutos = DF.readFileSync('products.csv').parseCSV().parseFloats('preco');
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('3.3-lista-clientes-produto-mais-vendido.csv');
+    dados.asCSV().writeFile('3.4-lista-vendedores-produto-mais-vendido.csv');
 }
 
 let pedidosClientes = listaPedidos
@@ -75,8 +75,9 @@ let valorProdutoOrdemDecrescente = qntdeVendasPorProduto.orderByDescending(row =
 let valorProdutoOrdemCrescente = qntdeVendasPorProduto.orderBy(row => row.valor);
 
 let produtoMaisVendido = valorProdutoOrdemDecrescente.at(0);
-let listaIDClientesProdutoMaisVendido = listaPedidos.where(row => row['produto'] === produtoMaisVendido.idProduto);
-let qntdProdutoMaisVendidoPorCliente = listaIDClientesProdutoMaisVendido
+
+let listaPedidosProdutoMaisVendido = listaPedidos.where(row => row['produto'] === produtoMaisVendido.idProduto);
+let qntdProdutoMaisVendidoPorCliente = listaPedidosProdutoMaisVendido
     .groupBy(row => row['cliente'])
     .select(group =>({
         idCliente: group.first()['cliente'],
@@ -93,4 +94,21 @@ let listaNomesClientesProdutoMaisVendido = qntdProdutoMaisVendidoPorCliente.join
     }
 )
 
-escreveArquivo(listaNomesClientesProdutoMaisVendido);
+let qntdProdutoMaisVendidoPorVendedor = listaPedidosProdutoMaisVendido
+    .groupBy(row => row['vendedor'])
+    .select(group =>({
+        idVendedor: group.first()['vendedor'],
+        qntdeProduto: group.deflate(row => row['quantidade']).sum()
+    }))
+    .inflate()
+    .orderByDescending(row => row.qntdeProduto);
+let listaNomesVendedoresProdutoMaisVendido = qntdProdutoMaisVendidoPorVendedor.join(
+    listaVendedores,
+    (left) => left.idVendedor,
+    (right) => right.id,
+    (left,right) => {
+        return {idVendedor: left.idVendedor, vendedor: right.nome, qntdeProduto: left.qntdeProduto}
+    }
+)
+
+escreveArquivo(listaNomesVendedoresProdutoMaisVendido);
