@@ -8,7 +8,7 @@ const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
 const listaProdutos = DF.readFileSync('products.csv').parseCSV().parseFloats('preco');
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('3.4-lista-vendedores-produto-mais-vendido.csv');
+    dados.asCSV().writeFile('4.0-ranking-clientes-valor-compra.csv');
 }
 
 let pedidosClientes = listaPedidos
@@ -17,7 +17,8 @@ let pedidosClientes = listaPedidos
         idCliente: group.first()['cliente'],
         totalPedidos: group.deflate(row => row['quantidade']).sum(),
     }))
-    .inflate();
+    .inflate(
+);
 
 let qtdePedidosPorCliente = pedidosClientes.join(
     listaClientes,
@@ -37,7 +38,8 @@ let pedidosVendedor = listaPedidos
         idVendedor: group.first()['vendedor'],
         totalVendas: group.deflate(row => row['quantidade']).sum(),
     }))
-    .inflate();
+    .inflate(
+);
 
 let qntdeVendasPorVendedor = pedidosVendedor.join(
     listaVendedores,
@@ -57,14 +59,15 @@ let pedidosProdutos = listaPedidos
         idProduto: group.first()['produto'],
         numPedidos: group.deflate(row => row['quantidade']).sum()
     }))
-    .inflate();
+    .inflate(
+);
 
 let qntdeVendasPorProduto = pedidosProdutos.join(
     listaProdutos,
     (left) => left.idProduto,
     (right) => right.id,
     (left,right) => {
-        return {idProduto: left.idProduto, nomeProduto: right.nome, numPedidos: left.numPedidos, valor: ((right.preco*left.numPedidos))}
+        return {idProduto: left.idProduto, nomeProduto: right.nome, numPedidos: left.numPedidos, valor: (right.preco*left.numPedidos)};
     }
 );
 
@@ -84,7 +87,9 @@ let qntdProdutoMaisVendidoPorCliente = listaPedidosProdutoMaisVendido
         qntdeProduto: group.deflate(row => row['quantidade']).sum()
     }))
     .inflate()
-    .orderByDescending(row => row.qntdeProduto);
+    .orderByDescending(row => row.qntdeProduto
+);
+
 let listaNomesClientesProdutoMaisVendido = qntdProdutoMaisVendidoPorCliente.join(
     listaClientes,
     (left) => left.idCliente,
@@ -101,7 +106,9 @@ let qntdProdutoMaisVendidoPorVendedor = listaPedidosProdutoMaisVendido
         qntdeProduto: group.deflate(row => row['quantidade']).sum()
     }))
     .inflate()
-    .orderByDescending(row => row.qntdeProduto);
+    .orderByDescending(row => row.qntdeProduto
+);
+
 let listaNomesVendedoresProdutoMaisVendido = qntdProdutoMaisVendidoPorVendedor.join(
     listaVendedores,
     (left) => left.idVendedor,
@@ -111,4 +118,30 @@ let listaNomesVendedoresProdutoMaisVendido = qntdProdutoMaisVendidoPorVendedor.j
     }
 )
 
-escreveArquivo(listaNomesVendedoresProdutoMaisVendido);
+let pedidosComValor = listaPedidos.join(
+    listaProdutos,
+    (left) => left.produto,
+    (right) => right.id,
+    (left, right) => {
+        return {idProduto: left.produto, idCliente: left.cliente, idVendedor: left.vendedor, quantidade: left.quantidade, valor: (left.quantidade*right.preco)};
+    }
+);
+
+let rankingClientes = pedidosComValor.join(
+    listaClientes,
+    (left) => left.idCliente,
+    (right) => right.id,
+    (left, right) => {
+        return {idCliente: left.idCliente, nomeCliente: right.nome, valor: left.valor};
+    })
+    .groupBy(row => row['nomeCliente'])
+    .select(group =>({
+        idCliente: group.first()['idCliente'],
+        nomeCliente: group.first()['nomeCliente'],
+        valorCompra: group.deflate(row => row['valor']).sum()
+    }))
+    .inflate()
+    .orderByDescending(row => row['valorCompra']
+);
+
+escreveArquivo(rankingClientes);
