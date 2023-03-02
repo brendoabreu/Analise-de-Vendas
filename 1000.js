@@ -8,7 +8,7 @@ const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
 const listaProdutos = DF.readFileSync('products.csv').parseCSV().parseFloats('preco');
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('4.1-ranking-vendedores-valor-compra.csv');
+    dados.asCSV().writeFile('4.0-cliente-mais-comprou.csv');
 }
 
 let pedidosClientes = listaPedidos
@@ -144,6 +144,8 @@ let rankingClientes = pedidosComValor.join(
     .orderByDescending(row => row['valorCompra']
 );
 
+let clienteMaisComprou = rankingClientes.head(1);
+
 let rankingVendedores = pedidosComValor.join(
     listaVendedores,
     (left) => left.idVendedor,
@@ -161,4 +163,19 @@ let rankingVendedores = pedidosComValor.join(
     .orderByDescending(row => row['valorCompra']
 );
 
-escreveArquivo(rankingVendedores);
+let vendedorMaisVendeu = rankingVendedores.head(1);
+
+let rankingClientesValorPorPedido = pedidosComValor.join(
+    listaClientes,
+    (left) => left.idCliente,
+    (right) => right.id,
+    (left,right) => {
+        return {idCliente: left.idCliente, nomeCliente: right.nome, valor: left.valor};
+    })
+    .orderByDescending(row => row['valor']
+);
+
+let clienteMaiorValorPorCompra = rankingClientesValorPorPedido.head(1);
+
+//escreveArquivo(rankingClientesValorPorPedido);
+escreveArquivo(clienteMaisComprou);
