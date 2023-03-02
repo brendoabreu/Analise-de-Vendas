@@ -7,8 +7,17 @@ const listaClientes = DF.readFileSync('clients.csv').parseCSV();
 const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
 const listaProdutos = DF.readFileSync('products.csv').parseCSV().parseFloats('preco');
 
+let pedidosComValor = listaPedidos.join(
+    listaProdutos,
+    (left) => left.produto,
+    (right) => right.id,
+    (left, right) => {
+        return {idProduto: left.produto, idCliente: left.cliente, idVendedor: left.vendedor, quantidade: left.quantidade, valor: (left.quantidade*right.preco)};
+    }
+);
+
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('5.1-vendedor-maior-valor.csv');
+    dados.asCSV().writeFile('6.0-pais-mais-comprou.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
@@ -119,15 +128,6 @@ let listaNomesVendedoresProdutoMaisVendido = qntdProdutoMaisVendidoPorVendedor.j
     }
 )
 
-let pedidosComValor = listaPedidos.join(
-    listaProdutos,
-    (left) => left.produto,
-    (right) => right.id,
-    (left, right) => {
-        return {idProduto: left.produto, idCliente: left.cliente, idVendedor: left.vendedor, quantidade: left.quantidade, valor: (left.quantidade*right.preco)};
-    }
-);
-
 let rankingClientes = pedidosComValor.join(
     listaClientes,
     (left) => left.idCliente,
@@ -190,8 +190,27 @@ let rankingVendedoresValorPorPedido = pedidosComValor.join(
 
 let vendedorMaiorValorPorVenda = rankingVendedoresValorPorPedido.head(1);
 
+let rankingPedidosPorPais = pedidosComValor.join(
+    listaClientes,
+    (left) => left.idCliente,
+    (right) => right.id,
+    (left, right) => {
+        return {pais: right.pais, quantidade: left.quantidade, valor: left.valor};
+    })
+    .groupBy(row => row['pais'])
+    .select(group =>({
+        pais: group.first()['pais'],
+        quantidade: group.deflate(row => row['quantidade']).sum(),
+        valor: group.deflate(row => row['valor']).sum()
+    }))
+    .inflate()
+    .orderByDescending(row => row['valor']
+);
+
+let paisMaisComprou = rankingPedidosPorPais.head(1);
+
 //console.log(rankingVendedoresValorPorPedido.head(1).toString());
 //console.log(vendedorMaiorValorPorVenda);
 
-//escreveArquivo(rankingVendedoresValorPorPedido);
-escreveArquivo(vendedorMaiorValorPorVenda);
+//escreveArquivo(rankingPedidosPorPais);
+escreveArquivo(paisMaisComprou);
