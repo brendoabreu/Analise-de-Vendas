@@ -1,91 +1,151 @@
-pais,nomeProduto,quantidade
-Afghanistan,Awesome Metal Computer,1598
-Albania,Handcrafted Wooden Fish,1333
-Angola,Unbranded Granite Chicken,1141
-Anguilla,Tasty Frozen Table,2589
-Antigua and Barbuda,Incredible Granite Hat,1468
-Argentina,Rustic Concrete Bike,1165
-Azerbaijan,Small Concrete Shoes,1681
-Bahrain,Practical Rubber Car,2436
-Belarus,Handmade Granite Cheese,2183
-Belize,Refined Fresh Shirt,2328
-Benin,Practical Wooden Ball,1405
-Bolivia,Rustic Cotton Chair,2457
-Brazil,Generic Rubber Shirt,2070
-British Indian Ocean Territory (Chagos Archipelago),Small Frozen Tuna,1470
-Burkina Faso,Small Frozen Tuna,2320
-Burundi,Handcrafted Fresh Mouse,1903
-Canada,Rustic Cotton Ball,1753
-Central African Republic,Small Frozen Tuna,1269
-Chile,Practical Rubber Car,1220
-Christmas Island,Handcrafted Fresh Mouse,1779
-Cocos (Keeling) Islands,Rustic Cotton Ball,1486
-Colombia,Tasty Frozen Table,1818
-Comoros,Practical Wooden Bacon,1886
-Congo,Practical Rubber Car,2134
-Costa Rica,Rustic Concrete Bike,1245
-Croatia,Small Frozen Tuna,1726
-Cyprus,Licensed Steel Sausages,1187
-Czech Republic,Intelligent Plastic Gloves,2361
-Dominican Republic,Unbranded Cotton Hat,1402
-Ecuador,Sleek Plastic Chips,1505
-Estonia,Awesome Rubber Salad,2356
-Ethiopia,Intelligent Metal Computer,2065
-Faroe Islands,Awesome Steel Towels,1901
-France,Unbranded Granite Chicken,2214
-French Southern Territories,Practical Wooden Bacon,1454
-Gabon,Intelligent Plastic Gloves,2060
-Germany,Tasty Frozen Table,1180
-Greece,Licensed Steel Sausages,1367
-Guinea,Handmade Frozen Salad,1231
-Guinea-Bissau,Fantastic Steel Hat,1652
-Hungary,Sleek Plastic Chips,2268
-Indonesia,Practical Wooden Ball,1260
-Iran,Small Frozen Tuna,2376
-Isle of Man,Ergonomic Cotton Computer,1727
-Lao Peoples Democratic Republic,Practical Rubber Car,1563
-Latvia,Sleek Plastic Chips,1187
-Liechtenstein,Small Frozen Tuna,1466
-Macao,Awesome Metal Computer,2174
-Mauritius,Rustic Metal Towels,2477
-Mayotte,Handmade Frozen Salad,1769
-Moldova,Awesome Cotton Pizza,1929
-Monaco,Handcrafted Fresh Mouse,2240
-Mongolia,Rustic Concrete Bike,1986
-Montenegro,Unbranded Granite Chicken,1225
-Montserrat,Unbranded Granite Chicken,2298
-Mozambique,Awesome Granite Sausages,1725
-Namibia,Rustic Concrete Bike,2845
-Nauru,Intelligent Metal Computer,1442
-New Caledonia,Unbranded Granite Chicken,1660
-Nigeria,Intelligent Metal Computer,1806
-Norfolk Island,Handcrafted Wooden Fish,1360
-Panama,Small Frozen Tuna,2437
-Paraguay,Rustic Metal Towels,1890
-Peru,Handcrafted Wooden Fish,2029
-Pitcairn Islands,Tasty Frozen Table,1993
-Puerto Rico,Practical Rubber Car,2086
-Qatar,Handcrafted Wooden Fish,2034
-Romania,Handcrafted Wooden Fish,2309
-Russian Federation,Rustic Concrete Bike,2073
-Saint Barthelemy,Handcrafted Wooden Fish,1807
-Saint Kitts and Nevis,Refined Frozen Ball,2500
-Saint Martin,Handcrafted Fresh Mouse,2027
-Senegal,Rustic Metal Towels,2037
-Sierra Leone,Awesome Cotton Pizza,1667
-Slovakia (Slovak Republic),Rustic Cotton Ball,2109
-Somalia,Rustic Cotton Gloves,888
-Spain,Tasty Frozen Table,2278
-Sri Lanka,Tasty Frozen Table,1712
-Switzerland,Handcrafted Fresh Mouse,1653
-Syrian Arab Republic,Fantastic Steel Hat,2033
-Tajikistan,Incredible Granite Hat,1995
-Tanzania,Practical Rubber Car,1457
-Trinidad and Tobago,Handcrafted Wooden Gloves,1648
-Tunisia,Rustic Cotton Ball,1500
-United Kingdom,Handcrafted Wooden Fish,1444
-United States of America,Awesome Metal Computer,1672
-Uruguay,Refined Fresh Shirt,2146
-Vanuatu,Intelligent Metal Computer,2475
-"Virgin Islands, U.S.",Handmade Granite Cheese,2035
-Wallis and Futuna,Handcrafted Wooden Fish,2246
+configFn,content,indexedContent
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],
+,[object Object],

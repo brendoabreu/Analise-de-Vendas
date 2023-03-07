@@ -18,14 +18,14 @@ let pedidosComValor = listaPedidos.join(
 );
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('8.1-valor-vendas-mes-ano.csv');
+    dados.asCSV().writeFile('9.0-media-produtos-vendidos-por-vendedor-por-ano.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
 let pedidosClientes = listaPedidos.groupBy(row => row['cliente'])
     .select(group => ({
         idCliente: group.first()['cliente'],
-        totalPedidos: group.deflate(row => row['quantidade']).sum(),
+        totalPedidos: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed),
     }))
     .inflate();
 
@@ -44,7 +44,7 @@ let pedidosClientesOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.num
 let pedidosVendedor = listaPedidos.groupBy(row => row['vendedor'])
     .select(group => ({
         idVendedor: group.first()['vendedor'],
-        totalVendas: group.deflate(row => row['quantidade']).sum(),
+        totalVendas: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed(2)),
     }))
     .inflate();
 
@@ -63,7 +63,7 @@ let vendasVendedorOrdemCrescente = qntdeVendasPorVendedor.orderBy(row => row.num
 let pedidosProdutos = listaPedidos.groupBy(row => row['produto'])
     .select(group => ({
         idProduto: group.first()['produto'],
-        numPedidos: group.deflate(row => row['quantidade']).sum()
+        numPedidos: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed(2))
     }))
     .inflate();
 
@@ -88,7 +88,7 @@ let listaPedidosProdutoMaisVendido = listaPedidos.where(row => row['produto'] ==
 let qntdProdutoMaisVendidoPorCliente = listaPedidosProdutoMaisVendido.groupBy(row => row['cliente'])
     .select(group =>({
         idCliente: group.first()['cliente'],
-        qntdeProduto: group.deflate(row => row['quantidade']).sum()
+        qntdeProduto: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed(2))
     }))
     .inflate()
     .orderByDescending(row => row.qntdeProduto);
@@ -105,7 +105,7 @@ let listaNomesClientesProdutoMaisVendido = qntdProdutoMaisVendidoPorCliente.join
 let qntdProdutoMaisVendidoPorVendedor = listaPedidosProdutoMaisVendido.groupBy(row => row['vendedor'])
     .select(group =>({
         idVendedor: group.first()['vendedor'],
-        qntdeProduto: group.deflate(row => row['quantidade']).sum()
+        qntdeProduto: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed(2))
     }))
     .inflate()
     .orderByDescending(row => row.qntdeProduto);
@@ -130,7 +130,7 @@ let rankingClientes = pedidosComValor.join(
     .select(group =>({
         idCliente: group.first()['idCliente'],
         nomeCliente: group.first()['nomeCliente'],
-        valorCompra: group.deflate(row => row['valor']).sum()
+        valorCompra: parseFloat(group.deflate(row => row['valor']).sum().toFixed(2))
     }))
     .inflate()
     .orderByDescending(row => row['valorCompra']);
@@ -148,7 +148,7 @@ let rankingVendedores = pedidosComValor.join(
     .select(group =>({
         idVendedor: group.first()['idVendedor'],
         nomeVendedor: group.first()['nomeVendedor'],
-        valorCompra: group.deflate(row => row['valor']).sum()
+        valorCompra: parseFloat(group.deflate(row => row['valor']).sum().toFixed(2))
     }))
     .inflate()
     .orderByDescending(row => row['valorCompra']);
@@ -189,8 +189,8 @@ let pedidosPorPais = pedidosComValor.join(
 let rankingPedidosPorPais = pedidosPorPais.groupBy(row => row['pais'])
     .select(group =>({
         pais: group.first()['pais'],
-        quantidade: group.deflate(row => row['quantidade']).sum(),
-        valor: group.deflate(row => row['valor']).sum()
+        quantidade: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed(2)),
+        valor: parseFloat(group.deflate(row => row['valor']).sum().toFixed(2))
     }))
     .inflate()
     .orderByDescending(row => row['valor']);
@@ -210,8 +210,8 @@ let rankingProdutosCompradosPorPais = pedidosPorPais.join(
         pais: group.first()['pais'],
         idProduto: group.first()['idProduto'],
         nomeProduto: group.first()['nomeProduto'],
-        quantidade: group.deflate(row => row['quantidade']).sum(),
-        valor: group.deflate(row => row ['valor']).sum()
+        quantidade: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed(2)),
+        valor: parseFloat(group.deflate(row => row ['valor']).sum().toFixed(2))
     }))
     .orderBy(row => row['pais'])
     .thenByDescending(row => row['quantidade'])
@@ -226,7 +226,7 @@ let rankingProdutosCompradosPorPais = pedidosPorPais.join(
 let rankingVendasAno = pedidosComValor.groupBy(row => row['ano'])
     .select(group => ({
         ano: group.first()['ano'],
-        valorVendas: group.deflate(row => row['valor']).sum()
+        valorVendas: parseFloat(group.deflate(row => row['valor']).sum().toFixed(2))
     }))
     .inflate();
 
@@ -236,8 +236,26 @@ let rankingVendasMesAno = pedidosComValor.orderBy(row => row['ano'])
     .select(group => ({
         ano: group.first()['ano'],
         mes: group.first()['mes'],
-        valorVendas: group.deflate(row => row['valor']).sum()
+        valorVendas: parseFloat(group.deflate(row => row['valor']).sum().toFixed(2))
     }))
     .inflate();
 
-escreveArquivo(rankingVendasMesAno);
+let tabelaMediaProdutosVendidosPorVendedor = pedidosComValor.join(
+    listaVendedores,
+    (left) => left.idVendedor,
+    (right) => right.id,
+    (left, right) => {
+        return {idVendedor: left.idVendedor, nomeVendedor: right.nome, idProduto: left.idProduto, quantidade: left.quantidade, valor: left.valor, mes: left.mes, ano: left.ano};
+    })
+    .orderBy(row => row['idVendedor'])
+    .groupSequentialBy(row => row['ano'])
+    .select(group => ({
+        idVendedor: group.first()['idVendedor'],
+        nomeVendedor: group.first()['nomeVendedor'],
+        ano: group.first()['ano'],
+        mediaVendas: parseFloat(group.deflate(row => row['quantidade']).average().toFixed(2))
+    }))
+    .inflate()
+    .orderBy(row => parseInt(row['idVendedor']));
+
+escreveArquivo(tabelaMediaProdutosVendidosPorVendedor);
