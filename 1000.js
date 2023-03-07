@@ -2,9 +2,6 @@ const { group } = require('console');
 const { DataFrame } = require('data-forge');
 const DF = require('data-forge-fs');
 const { inflate } = require('zlib');
-const fs = require ('fs');
-const { stringify } = require('querystring');
-const converter = require('json-2-csv');
 
 const listaPedidos = DF.readFileSync('orders.csv').parseCSV().parseInts('quantidade');
 const listaClientes = DF.readFileSync('clients.csv').parseCSV();
@@ -16,23 +13,21 @@ let pedidosComValor = listaPedidos.join(
     (left) => left.produto,
     (right) => right.id,
     (left, right) => {
-        return {idProduto: left.produto, idCliente: left.cliente, idVendedor: left.vendedor, quantidade: left.quantidade, valor: (left.quantidade*right.preco)};
+        return {idProduto: left.produto, idCliente: left.cliente, idVendedor: left.vendedor, quantidade: left.quantidade, valor: (left.quantidade*right.preco), data: left.data, dia: new Date(left.data).getDate(), mes: new Date(left.data).getMonth(), ano: new Date(left.data).getFullYear()};
     }
 );
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('7.0-produto-mais-comprado-por-pais.csv');
+    dados.asCSV().writeFile('8.0-vendas-por-ano.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
-let pedidosClientes = listaPedidos
-    .groupBy(row => row['cliente'])
+let pedidosClientes = listaPedidos.groupBy(row => row['cliente'])
     .select(group => ({
         idCliente: group.first()['cliente'],
         totalPedidos: group.deflate(row => row['quantidade']).sum(),
     }))
-    .inflate(
-);
+    .inflate();
 
 let qtdePedidosPorCliente = pedidosClientes.join(
     listaClientes,
@@ -46,14 +41,12 @@ let qtdePedidosPorCliente = pedidosClientes.join(
 let pedidosClientesOrdemDecrescente = qtdePedidosPorCliente.orderByDescending(row => row.numPedidos);
 let pedidosClientesOrdemCrescente = qtdePedidosPorCliente.orderBy(row => row.numPedidos);
 
-let pedidosVendedor = listaPedidos
-    .groupBy(row => row['vendedor'])
+let pedidosVendedor = listaPedidos.groupBy(row => row['vendedor'])
     .select(group => ({
         idVendedor: group.first()['vendedor'],
         totalVendas: group.deflate(row => row['quantidade']).sum(),
     }))
-    .inflate(
-);
+    .inflate();
 
 let qntdeVendasPorVendedor = pedidosVendedor.join(
     listaVendedores,
@@ -67,8 +60,7 @@ let qntdeVendasPorVendedor = pedidosVendedor.join(
 let vendasVendedorOrdemDecrescente = qntdeVendasPorVendedor.orderByDescending(row => row.numVendas);
 let vendasVendedorOrdemCrescente = qntdeVendasPorVendedor.orderBy(row => row.numVendas);
 
-let pedidosProdutos = listaPedidos
-    .groupBy(row => row['produto'])
+let pedidosProdutos = listaPedidos.groupBy(row => row['produto'])
     .select(group => ({
         idProduto: group.first()['produto'],
         numPedidos: group.deflate(row => row['quantidade']).sum()
@@ -93,15 +85,13 @@ let valorProdutoOrdemCrescente = qntdeVendasPorProduto.orderBy(row => row.valor)
 let produtoMaisVendido = valorProdutoOrdemDecrescente.at(0);
 
 let listaPedidosProdutoMaisVendido = listaPedidos.where(row => row['produto'] === produtoMaisVendido.idProduto);
-let qntdProdutoMaisVendidoPorCliente = listaPedidosProdutoMaisVendido
-    .groupBy(row => row['cliente'])
+let qntdProdutoMaisVendidoPorCliente = listaPedidosProdutoMaisVendido.groupBy(row => row['cliente'])
     .select(group =>({
         idCliente: group.first()['cliente'],
         qntdeProduto: group.deflate(row => row['quantidade']).sum()
     }))
     .inflate()
-    .orderByDescending(row => row.qntdeProduto
-);
+    .orderByDescending(row => row.qntdeProduto);
 
 let listaNomesClientesProdutoMaisVendido = qntdProdutoMaisVendidoPorCliente.join(
     listaClientes,
@@ -112,15 +102,13 @@ let listaNomesClientesProdutoMaisVendido = qntdProdutoMaisVendidoPorCliente.join
     }
 )
 
-let qntdProdutoMaisVendidoPorVendedor = listaPedidosProdutoMaisVendido
-    .groupBy(row => row['vendedor'])
+let qntdProdutoMaisVendidoPorVendedor = listaPedidosProdutoMaisVendido.groupBy(row => row['vendedor'])
     .select(group =>({
         idVendedor: group.first()['vendedor'],
         qntdeProduto: group.deflate(row => row['quantidade']).sum()
     }))
     .inflate()
-    .orderByDescending(row => row.qntdeProduto
-);
+    .orderByDescending(row => row.qntdeProduto);
 
 let listaNomesVendedoresProdutoMaisVendido = qntdProdutoMaisVendidoPorVendedor.join(
     listaVendedores,
@@ -145,8 +133,7 @@ let rankingClientes = pedidosComValor.join(
         valorCompra: group.deflate(row => row['valor']).sum()
     }))
     .inflate()
-    .orderByDescending(row => row['valorCompra']
-);
+    .orderByDescending(row => row['valorCompra']);
 
 let clienteMaisComprou = rankingClientes.head(1);
 
@@ -164,8 +151,7 @@ let rankingVendedores = pedidosComValor.join(
         valorCompra: group.deflate(row => row['valor']).sum()
     }))
     .inflate()
-    .orderByDescending(row => row['valorCompra']
-);
+    .orderByDescending(row => row['valorCompra']);
 
 let vendedorMaisVendeu = rankingVendedores.head(1);
 
@@ -176,8 +162,7 @@ let rankingClientesValorPorPedido = pedidosComValor.join(
     (left,right) => {
         return {idCliente: left.idCliente, nomeCliente: right.nome, valor: left.valor};
     })
-    .orderByDescending(row => row['valor']
-);
+    .orderByDescending(row => row['valor']);
 
 let clienteMaiorValorPorCompra = rankingClientesValorPorPedido.head(1);
 
@@ -188,8 +173,7 @@ let rankingVendedoresValorPorPedido = pedidosComValor.join(
     (left,right) => {
         return {idVendedor: left.idVendedor, nomeVendedor: right.nome, valor: left.valor};
     })
-    .orderByDescending(row => row['valor']
-);
+    .orderByDescending(row => row['valor']);
 
 let vendedorMaiorValorPorVenda = rankingVendedoresValorPorPedido.head(1);
 
@@ -202,16 +186,14 @@ let pedidosPorPais = pedidosComValor.join(
 });
  
 
-let rankingPedidosPorPais = pedidosPorPais
-    .groupBy(row => row['pais'])
+let rankingPedidosPorPais = pedidosPorPais.groupBy(row => row['pais'])
     .select(group =>({
         pais: group.first()['pais'],
         quantidade: group.deflate(row => row['quantidade']).sum(),
         valor: group.deflate(row => row['valor']).sum()
     }))
     .inflate()
-    .orderByDescending(row => row['valor']
-);
+    .orderByDescending(row => row['valor']);
 
 let rankingProdutosCompradosPorPais = pedidosPorPais.join(
     listaProdutos,
@@ -241,4 +223,11 @@ let rankingProdutosCompradosPorPais = pedidosPorPais.join(
     }))
     .inflate();
 
-escreveArquivo(rankingProdutosCompradosPorPais);
+let rankingVendasAno = pedidosComValor.groupBy(row => row['ano'])
+    .select(group => ({
+        ano: group.first()['ano'],
+        valorVendas: group.deflate(row => row['valor']).sum()
+    }))
+    .inflate();
+
+escreveArquivo(rankingVendasAno);

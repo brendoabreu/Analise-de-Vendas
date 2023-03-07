@@ -9,25 +9,10 @@ const listaVendedores = DF.readFileSync('sellers.csv').parseCSV();
 const listaProdutos = DF.readFileSync('products.csv').parseCSV().parseFloats('preco');
 const listaMaisVendidos = DF.readFileSync('3.1 e 3.2 ranking-vendas-produtos-valor.csv').parseCSV();
 
-let JSON = [    
-    {
-        pais: 'Virgin Islands, U.S.',
-        nomeProduto: 'Handmade Granite Cheese',
-        quantidade: 2035
-    },
-    {
-        pais: 'Wallis and Futuna',
-        nomeProduto: 'Handcrafted Wooden Fish',
-        quantidade: 2246
-    }
-];
+let data = new Date ('2020-01-01T04:00:00.000Z');
 
-let json2csvCallback = function (err, csv) {
-    if (err) console.log('Erro ao converter');
-    let resultado = csv;
-    return resultado;
-};
+console.log(data);
 
-let oi = converter.json2csv(JSON, json2csvCallback);
+let hoje = data.getDate();
 
-console.log(oi);
+console.log(hoje);
