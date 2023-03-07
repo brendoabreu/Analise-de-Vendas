@@ -1,6 +1,10 @@
 const { group } = require('console');
 const { DataFrame } = require('data-forge');
 const DF = require('data-forge-fs');
+const { inflate } = require('zlib');
+const fs = require ('fs');
+const { stringify } = require('querystring');
+const converter = require('json-2-csv');
 
 const listaPedidos = DF.readFileSync('orders.csv').parseCSV().parseInts('quantidade');
 const listaClientes = DF.readFileSync('clients.csv').parseCSV();
@@ -17,7 +21,7 @@ let pedidosComValor = listaPedidos.join(
 );
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('6.0-pais-mais-comprou.csv');
+    dados.asCSV().writeFile('7.0-produto-mais-comprado-por-pais.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
@@ -69,8 +73,7 @@ let pedidosProdutos = listaPedidos
         idProduto: group.first()['produto'],
         numPedidos: group.deflate(row => row['quantidade']).sum()
     }))
-    .inflate(
-);
+    .inflate();
 
 let qntdeVendasPorProduto = pedidosProdutos.join(
     listaProdutos,
@@ -190,13 +193,16 @@ let rankingVendedoresValorPorPedido = pedidosComValor.join(
 
 let vendedorMaiorValorPorVenda = rankingVendedoresValorPorPedido.head(1);
 
-let rankingPedidosPorPais = pedidosComValor.join(
+let pedidosPorPais = pedidosComValor.join(
     listaClientes,
     (left) => left.idCliente,
     (right) => right.id,
     (left, right) => {
-        return {pais: right.pais, quantidade: left.quantidade, valor: left.valor};
-    })
+        return {idCliente: right.id, pais: right.pais, idProduto: left.idProduto, quantidade: left.quantidade, valor: left.valor};
+});
+ 
+
+let rankingPedidosPorPais = pedidosPorPais
     .groupBy(row => row['pais'])
     .select(group =>({
         pais: group.first()['pais'],
@@ -207,10 +213,32 @@ let rankingPedidosPorPais = pedidosComValor.join(
     .orderByDescending(row => row['valor']
 );
 
-let paisMaisComprou = rankingPedidosPorPais.head(1);
+let rankingProdutosCompradosPorPais = pedidosPorPais.join(
+    listaProdutos,
+    (left) => left.idProduto,
+    (right) => right.id,
+    (left, right) => {
+        return {pais: left.pais, idProduto: left.idProduto, nomeProduto: right.nome, quantidade: left.quantidade, valor: left.valor}
+    })
+    .orderBy(row => row['pais'])
+    .thenByDescending(row => row['idProduto'])
+    .thenByDescending(row => row['quantidade'])
+    .groupSequentialBy(row => row['idProduto'])
+    .select(group => ({
+        pais: group.first()['pais'],
+        idProduto: group.first()['idProduto'],
+        nomeProduto: group.first()['nomeProduto'],
+        quantidade: group.deflate(row => row['quantidade']).sum(),
+        valor: group.deflate(row => row ['valor']).sum()
+    }))
+    .orderBy(row => row['pais'])
+    .thenByDescending(row => row['quantidade'])
+    .groupSequentialBy(row => row['pais'])
+    .select(group => ({
+        pais: group.first()['pais'],
+        nomeProduto: group.first()['nomeProduto'],
+        quantidade: group.first()['quantidade']
+    }))
+    .inflate();
 
-//console.log(rankingVendedoresValorPorPedido.head(1).toString());
-//console.log(vendedorMaiorValorPorVenda);
-
-//escreveArquivo(rankingPedidosPorPais);
-escreveArquivo(paisMaisComprou);
+escreveArquivo(rankingProdutosCompradosPorPais);
