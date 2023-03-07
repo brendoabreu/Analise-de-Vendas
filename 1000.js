@@ -18,7 +18,7 @@ let pedidosComValor = listaPedidos.join(
 );
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('8.0-vendas-por-ano.csv');
+    dados.asCSV().writeFile('8.1-valor-vendas-mes-ano.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
@@ -230,4 +230,14 @@ let rankingVendasAno = pedidosComValor.groupBy(row => row['ano'])
     }))
     .inflate();
 
-escreveArquivo(rankingVendasAno);
+let rankingVendasMesAno = pedidosComValor.orderBy(row => row['ano'])
+    .thenBy(row => row['mes'])
+    .groupSequentialBy(row => row['mes'])
+    .select(group => ({
+        ano: group.first()['ano'],
+        mes: group.first()['mes'],
+        valorVendas: group.deflate(row => row['valor']).sum()
+    }))
+    .inflate();
+
+escreveArquivo(rankingVendasMesAno);
