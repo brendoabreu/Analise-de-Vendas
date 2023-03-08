@@ -13,19 +13,19 @@ let pedidosComValor = listaPedidos.join(
     (left) => left.produto,
     (right) => right.id,
     (left, right) => {
-        return {idProduto: left.produto, idCliente: left.cliente, idVendedor: left.vendedor, quantidade: left.quantidade, valor: (left.quantidade*right.preco), data: left.data, dia: new Date(left.data).getDate(), mes: new Date(left.data).getMonth(), ano: new Date(left.data).getFullYear()};
+        return {idProduto: parseInt(left.produto), idCliente: parseInt(left.cliente), idVendedor: parseInt(left.vendedor), quantidade: parseInt(left.quantidade), valor: parseFloat((left.quantidade*right.preco).toFixed(2)), data: left.data, dia: new Date(left.data).getDate(), mes: new Date(left.data).getMonth(), ano: new Date(left.data).getFullYear()};
     }
 );
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('9.0-media-produtos-vendidos-por-vendedor-por-ano.csv');
+    dados.asCSV().writeFile('9.1-media-produtos-vendidos-por-vendedor-por-mes.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
 let pedidosClientes = listaPedidos.groupBy(row => row['cliente'])
     .select(group => ({
         idCliente: group.first()['cliente'],
-        totalPedidos: parseFloat(group.deflate(row => row['quantidade']).sum().toFixed),
+        totalPedidos: group.deflate(row => row['quantidade']).sum(),
     }))
     .inflate();
 
@@ -240,22 +240,39 @@ let rankingVendasMesAno = pedidosComValor.orderBy(row => row['ano'])
     }))
     .inflate();
 
-let tabelaMediaProdutosVendidosPorVendedor = pedidosComValor.join(
+let tabelaMediaProdutosVendidosPorVendedorPorAno = pedidosComValor.join(
     listaVendedores,
     (left) => left.idVendedor,
     (right) => right.id,
     (left, right) => {
         return {idVendedor: left.idVendedor, nomeVendedor: right.nome, idProduto: left.idProduto, quantidade: left.quantidade, valor: left.valor, mes: left.mes, ano: left.ano};
     })
-    .orderBy(row => row['idVendedor'])
+    .orderBy(row => row['nomeVendedor'])
     .groupSequentialBy(row => row['ano'])
     .select(group => ({
         idVendedor: group.first()['idVendedor'],
         nomeVendedor: group.first()['nomeVendedor'],
         ano: group.first()['ano'],
-        mediaVendas: parseFloat(group.deflate(row => row['quantidade']).average().toFixed(2))
+        mediaVendas: group.deflate(row => row['quantidade']).average().toFixed(2)
     }))
-    .inflate()
-    .orderBy(row => parseInt(row['idVendedor']));
+    .inflate();
 
-escreveArquivo(tabelaMediaProdutosVendidosPorVendedor);
+let tabelaMediaProdutosVendidosPorVendedorPorMes = pedidosComValor.join(
+    listaVendedores,
+    (left) => left.idVendedor,
+    (right) => right.id,
+    (left,right) => {
+        return {idVendedor: left.idVendedor, nomeVendedor: right.nome, idProduto: left.idProduto, quantidade: left.quantidade, valor: left.valor, mes: left.mes, ano: left.ano};
+    })
+    .orderBy(row => row['nomeVendedor'])
+    .groupSequentialBy(row => row['mes'])
+    .select(group => ({
+        idVendedor: group.first()['idVendedor'],
+        nomeVendedor: group.first()['nomeVendedor'],
+        mes: group.first()['mes'],
+        ano: group.first()['ano'],
+        mediaVendas: group.deflate(row => row['quantidade']).average().toFixed(2)
+    }))
+    .inflate();
+
+escreveArquivo(tabelaMediaProdutosVendidosPorVendedorPorMes);
