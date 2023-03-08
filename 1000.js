@@ -18,7 +18,7 @@ let pedidosComValor = listaPedidos.join(
 );
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('9.1-media-produtos-vendidos-por-vendedor-por-mes.csv');
+    dados.asCSV().writeFile('9.2-relatorio-demissao.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
@@ -275,4 +275,6 @@ let tabelaMediaProdutosVendidosPorVendedorPorMes = pedidosComValor.join(
     }))
     .inflate();
 
-escreveArquivo(tabelaMediaProdutosVendidosPorVendedorPorMes);
+let bottom5MediaVendedores = tabelaMediaProdutosVendidosPorVendedorPorAno.orderBy(row => row['mediaVendas']).head(5);
+
+escreveArquivo(bottom5MediaVendedores);
