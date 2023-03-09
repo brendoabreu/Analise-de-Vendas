@@ -18,7 +18,7 @@ let pedidosComValor = listaPedidos.join(
 );
 
 const escreveArquivo = (dados) => {
-    dados.asCSV().writeFile('9.2-relatorio-demissao.csv');
+    dados.asCSV().writeFile('teste.csv');
     console.log('Arquivo guardado com sucesso');
 }
 
@@ -277,4 +277,58 @@ let tabelaMediaProdutosVendidosPorVendedorPorMes = pedidosComValor.join(
 
 let bottom5MediaVendedores = tabelaMediaProdutosVendidosPorVendedorPorAno.orderBy(row => row['mediaVendas']).head(5);
 
-escreveArquivo(bottom5MediaVendedores);
+/* Imprime a lista de 5 valores, mas com valores separados
+
+let rankingTop5ClientesPorPais = pedidosComValor.join(
+    listaClientes,
+    (left) => left.idCliente,
+    (right) => right.id,
+    (left, right) => {
+        return {idCliente: left.idCliente, nomeCliente: right.nome, idProduto: left.idProduto, quantidade: left.quantidade, pais: right.pais, valor: left.valor, mes: left.mes, ano: left.ano};
+    })
+    .orderBy(row => row['nomeCliente'])
+    .groupSequentialBy(row => row['ano'])
+    .select(group => ({
+        ano: group.first()['ano'],
+        pais: group.first()['pais'],
+        idCliente: group.first()['idCliente'],
+        nomeCliente: group.first()['nomeCliente'],
+        valor: parseFloat(group.deflate(row => row['valor']).sum().toFixed(2))
+    }))
+    .inflate()
+    .orderBy(row => row['pais'])
+    .thenByDescending(row => row['valor'])
+    .groupSequentialBy(row => row['pais'])
+    .select(group => ({
+        ano: group.deflate(row => row['ano']).take(5),
+        pais: group.deflate(row => row['pais']).take(5),
+        idCliente: group.deflate(row => row['idCliente']).take(5),
+        nomeCliente: group.deflate(row => row['nomeCliente']).take(5),
+        valor: group.deflate(row => row['valor']).take(5)
+    }))
+    .inflate();*/
+
+/*Escreve os dataframes completos divididos por cada país, mas não sei como exportar somentes os cinco valores desses dataframes
+
+*/let rankingTop5ClientesPorPais = pedidosComValor.join(
+    listaClientes,
+    (left) => left.idCliente,
+    (right) => right.id,
+    (left, right) => {
+        return {idCliente: left.idCliente, nomeCliente: right.nome, idProduto: left.idProduto, quantidade: left.quantidade, pais: right.pais, valor: left.valor, mes: left.mes, ano: left.ano};
+    })
+    .orderBy(row => row['nomeCliente'])
+    .groupSequentialBy(row => row['ano'])
+    .select(group => ({
+        ano: group.first()['ano'],
+        pais: group.first()['pais'],
+        idCliente: group.first()['idCliente'],
+        nomeCliente: group.first()['nomeCliente'],
+        valor: parseFloat(group.deflate(row => row['valor']).sum().toFixed(2))
+    }))
+    .inflate()
+    .orderBy(row => row['pais'])
+    .thenByDescending(row => row['valor'])
+    .groupSequentialBy(row => row['pais']);
+
+console.log(rankingTop5ClientesPorPais.head(2).toString());

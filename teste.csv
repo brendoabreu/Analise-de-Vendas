@@ -1,301 +1,3241 @@
-idVendedor,nomeVendedor,ano,mediaVendas
-60,Abubakar Popov,2020,53.71
-60,Abubakar Popov,2021,50.41
-44,Adiy Lang,2020,51.78
-44,Adiy Lang,2021,50.48
-10,Alan Allen,2020,49.12
-10,Alan Allen,2021,50.73
-16,Aleksandr Wairimu,2020,51.47
-16,Aleksandr Wairimu,2021,50.10
-113,Alexander Santos,2020,49.91
-113,Alexander Santos,2021,53.03
-124,Alyona Yahaya,2020,50.71
-124,Alyona Yahaya,2021,49.25
-133,Ana Phillips,2020,50.12
-133,Ana Phillips,2021,50.53
-126,Ana Roberts,2020,50.21
-126,Ana Roberts,2021,50.38
-13,Andrew Kowalski,2020,51.46
-13,Andrew Kowalski,2021,49.19
-138,Andrey Pfeiffer,2020,51.09
-138,Andrey Pfeiffer,2021,49.88
-45,Andrzej Smoakley,2020,50.72
-45,Andrzej Smoakley,2021,51.24
-23,Anton Buthelezi,2020,51.59
-23,Anton Buthelezi,2021,49.62
-150,Asha Ngubane,2020,53.95
-150,Asha Ngubane,2021,51.58
-107,Asha Ostrowski,2020,52.34
-107,Asha Ostrowski,2021,49.52
-59,Barbara Kimura,2020,52.38
-59,Barbara Kimura,2021,47.83
-98,Bjarni Fujita,2020,49.56
-98,Bjarni Fujita,2021,50.25
-100,Carmen Wagner,2020,48.32
-100,Carmen Wagner,2021,51.79
-104,Chan Sasaki,2020,49.59
-104,Chan Sasaki,2021,52.49
-120,Chen John,2020,49.79
-120,Chen John,2021,47.16
-31,Christa Yuan,2020,51.08
-31,Christa Yuan,2021,49.14
-96,Dariusz Vazquez,2020,48.86
-96,Dariusz Vazquez,2021,48.86
-140,David Venter,2020,52.07
-140,David Venter,2021,51.15
-93,Dieter Paswan,2020,52.43
-93,Dieter Paswan,2021,52.74
-121,Edda Davies,2020,51.37
-121,Edda Davies,2021,51.62
-34,Elke Lal,2020,48.06
-34,Elke Lal,2021,50.04
-61,Ester Ngobeni,2020,50.14
-61,Ester Ngobeni,2021,51.16
-1,Esther Chided,2020,52.44
-1,Esther Chided,2021,50.13
-114,Esther Hassan,2020,51.16
-114,Esther Hassan,2021,47.52
-149,Eunice Powell,2020,51.81
-149,Eunice Powell,2021,50.24
-56,Fran Mthembu,2020,52.21
-56,Fran Mthembu,2021,51.18
-9,Francisca Wen,2020,50.28
-9,Francisca Wen,2021,51.62
-3,Frank Mahagna,2020,50.36
-3,Frank Mahagna,2021,50.96
-65,Fumiko De-Groot,2020,50.99
-65,Fumiko De-Groot,2021,50.34
-18,Gisela Chukwu,2020,49.83
-18,Gisela Chukwu,2021,52.81
-25,Gisela Umar,2020,49.65
-25,Gisela Umar,2021,50.86
-50,Hadiza Schmidt,2020,48.58
-50,Hadiza Schmidt,2021,49.84
-143,Heinz Lis,2020,49.27
-143,Heinz Lis,2021,51.90
-66,Helmut Van-Beek,2020,49.23
-66,Helmut Van-Beek,2021,49.40
-15,Hiromi Egorova,2020,49.27
-15,Hiromi Egorova,2021,49.98
-82,Hiroshi Morozova,2020,49.12
-82,Hiroshi Morozova,2021,49.02
-21,Hisako Iglesias,2020,51.17
-21,Hisako Iglesias,2021,50.16
-142,Hong Barasa,2020,50.14
-142,Hong Barasa,2021,48.02
-24,Horst Moreno,2020,49.01
-24,Horst Moreno,2021,50.59
-103,Irina Maluleke,2020,51.99
-103,Irina Maluleke,2021,50.56
-11,Irina Okon,2020,49.96
-11,Irina Okon,2021,53.02
-110,Isa Khoza,2020,48.34
-110,Isa Khoza,2021,48.73
-22,Isabel Sakamoto,2020,50.14
-22,Isabel Sakamoto,2021,49.62
-84,Janet Lee,2020,48.59
-84,Janet Lee,2021,51.79
-91,Janusz Young,2020,50.63
-91,Janusz Young,2021,48.45
-125,Jianguo Cruz,2020,53.70
-125,Jianguo Cruz,2021,52.77
-108,Jianguo Lehmann,2020,48.74
-108,Jianguo Lehmann,2021,47.35
-54,Jianjun Coetzee,2020,52.73
-54,Jianjun Coetzee,2021,50.64
-116,Johan Sitwat,2020,51.62
-116,Johan Sitwat,2021,52.97
-55,Johanna Begum,2020,49.67
-55,Johanna Begum,2021,51.01
-115,Jose Das,2020,50.11
-115,Jose Das,2021,50.27
-29,Jose-Manuel Pawlak,2020,51.03
-29,Jose-Manuel Pawlak,2021,50.73
-5,Joyce Baker,2020,48.52
-5,Joyce Baker,2021,50.59
-73,Joyce Chmielewski,2020,50.26
-73,Joyce Chmielewski,2021,49.07
-74,Joyce Mahato,2020,50.70
-74,Joyce Mahato,2021,50.04
-58,Justyna Nikolaev,2020,46.87
-58,Justyna Nikolaev,2021,51.45
-92,Karen Ali,2020,50.69
-92,Karen Ali,2021,48.51
-67,Karen Patil,2020,49.42
-67,Karen Patil,2021,48.15
-94,Karl-Heinz Nikolaev,2020,48.83
-94,Karl-Heinz Nikolaev,2021,51.97
-70,Karolina Edwards,2020,50.86
-70,Karolina Edwards,2021,47.92
-80,Karolina Mondal,2020,48.18
-80,Karolina Mondal,2021,50.62
-43,Keiko Bala,2020,50.12
-43,Keiko Bala,2021,52.27
-87,Kjartan Mwangi,2020,50.09
-87,Kjartan Mwangi,2021,48.49
-47,Krzysztof Ishii,2020,50.15
-47,Krzysztof Ishii,2021,49.34
-8,Lakshmi Wright,2020,50.80
-8,Lakshmi Wright,2021,50.99
-119,Lan Hoekstra,2020,49.33
-119,Lan Hoekstra,2021,49.31
-147,Li Hughes,2020,48.39
-147,Li Hughes,2021,51.10
-36,Lihua Kamau,2020,53.90
-36,Lihua Kamau,2021,53.39
-33,Lijun Kumar,2020,49.83
-33,Lijun Kumar,2021,52.41
-76,Lilian Mondal,2020,49.17
-76,Lilian Mondal,2021,50.02
-38,Ling Dlamini,2020,51.51
-38,Ling Dlamini,2021,51.20
-83,Liping Suzuki,2020,51.62
-83,Liping Suzuki,2021,48.56
-42,Lukasz Ikeda,2020,53.37
-42,Lukasz Ikeda,2021,50.80
-128,Lyubov Molina,2020,51.54
-128,Lyubov Molina,2021,50.00
-137,Maciej Endo,2020,50.77
-137,Maciej Endo,2021,49.76
-48,Mahmood Li,2020,50.25
-48,Mahmood Li,2021,47.64
-129,Mali Blom,2020,49.98
-129,Mali Blom,2021,49.02
-78,Manuel Schmid,2020,49.89
-78,Manuel Schmid,2021,46.90
-28,Marina Goto,2020,50.76
-28,Marina Goto,2021,49.85
-130,Marina Wojciechowski,2020,49.83
-130,Marina Wojciechowski,2021,49.81
-111,Martha Vasilev,2020,52.57
-111,Martha Vasilev,2021,53.04
-72,Mary Thompson,2020,50.42
-72,Mary Thompson,2021,54.56
-6,Matt Fujii,2020,51.28
-6,Matt Fujii,2021,51.13
-148,Meiyr Green,2020,50.07
-148,Meiyr Green,2021,51.01
-19,Mercy Janssen,2020,52.28
-19,Mercy Janssen,2021,52.60
-127,Michal Makarov,2020,50.20
-127,Michal Makarov,2021,51.37
-79,Mikhail Nikolaev,2020,52.35
-79,Mikhail Nikolaev,2021,48.53
-99,Mikhail Yakovleva,2020,47.59
-99,Mikhail Yakovleva,2021,49.69
-97,Min Molefe,2020,52.57
-97,Min Molefe,2021,50.64
-64,Ming Gil,2020,52.52
-64,Ming Gil,2021,47.83
-46,Mitsuo Nel,2020,50.77
-46,Mitsuo Nel,2021,50.30
-122,Mitsuo Rumbelow,2020,50.28
-122,Mitsuo Rumbelow,2021,47.82
-68,Miykhal Novikov,2020,50.74
-68,Miykhal Novikov,2021,52.76
-118,Muhammed Molefe,2020,49.67
-118,Muhammed Molefe,2021,51.18
-102,Nancy Shevchenko,2020,49.92
-102,Nancy Shevchenko,2021,49.36
-52,Natalya Sah,2020,50.51
-52,Natalya Sah,2021,51.28
-81,Ngozi Qiu,2020,52.44
-81,Ngozi Qiu,2021,50.72
-139,Nonhlanhla Dijkstra,2020,51.61
-139,Nonhlanhla Dijkstra,2021,48.81
-12,Olga Zakharova,2020,49.49
-12,Olga Zakharova,2021,51.83
-144,Pablo Zoabi,2020,47.58
-144,Pablo Zoabi,2021,48.31
-7,Peng Omar,2020,48.92
-7,Peng Omar,2021,51.92
-135,Pilar Jansen,2020,48.45
-135,Pilar Jansen,2021,49.78
-146,Ping Onyango,2020,49.84
-146,Ping Onyango,2021,53.53
-39,Ping Reyes,2020,48.77
-39,Ping Reyes,2021,52.56
-131,Purity Sato,2020,49.94
-131,Purity Sato,2021,54.16
-117,Pushpa Lawal,2020,49.78
-117,Pushpa Lawal,2021,51.72
-41,Qing Nakano,2020,50.24
-41,Qing Nakano,2021,49.94
-132,Radha Collins,2020,49.50
-132,Radha Collins,2021,49.57
-4,Ragnar Haraldsson,2020,51.13
-4,Ragnar Haraldsson,2021,52.85
-51,Rajendra Lal,2020,50.96
-51,Rajendra Lal,2021,49.08
-14,Rajendra Tian,2020,52.40
-14,Rajendra Tian,2021,53.00
-49,Rajesh Jimenez,2020,52.97
-49,Rajesh Jimenez,2021,49.86
-30,Ravi Rani,2020,49.11
-30,Ravi Rani,2021,51.11
-40,Renate Yoshida,2020,48.78
-40,Renate Yoshida,2021,51.08
-69,Richard Sanchez,2020,50.93
-69,Richard Sanchez,2021,51.74
-86,Rosa Sitwat,2020,51.90
-86,Rosa Sitwat,2021,49.58
-77,Sarah Kowalczyk,2020,49.58
-77,Sarah Kowalczyk,2021,50.54
-63,Sombun Schmid,2020,51.37
-63,Sombun Schmid,2021,51.95
-106,Somkhit Shemesh,2020,50.77
-106,Somkhit Shemesh,2021,48.49
-17,Somphong Kowalczyk,2020,48.94
-17,Somphong Kowalczyk,2021,50.78
-85,Suman Mbatha,2020,48.57
-85,Suman Mbatha,2021,47.77
-37,Sunday Cano,2020,50.14
-37,Sunday Cano,2021,51.44
-109,Sunday Richter,2020,50.83
-109,Sunday Richter,2021,50.08
-88,Suphaphon Aminu,2020,48.43
-88,Suphaphon Aminu,2021,48.55
-53,Susanne Vaknin,2020,49.52
-53,Susanne Vaknin,2021,51.66
-57,Tadashi Gumede,2020,48.47
-57,Tadashi Gumede,2021,50.80
-112,Tatyana Van-Beek,2020,49.62
-112,Tatyana Van-Beek,2021,50.62
-75,Tebogo Kim,2020,50.32
-75,Tebogo Kim,2021,51.57
-145,Urai Andreev,2020,49.15
-145,Urai Andreev,2021,49.90
-26,Uriy Rowlands,2020,50.58
-26,Uriy Rowlands,2021,50.36
-123,Victor Sulaiman,2020,51.13
-123,Victor Sulaiman,2021,50.81
-27,Vijay Gomez,2020,50.57
-27,Vijay Gomez,2021,47.97
-90,Vijay Pietrzak,2020,50.83
-90,Vijay Pietrzak,2021,50.03
-2,Wanphen Okada,2020,51.91
-2,Wanphen Okada,2021,52.28
-32,Watsana Smits,2020,48.94
-32,Watsana Smits,2021,48.67
-89,Winai Njoroge,2020,49.73
-89,Winai Njoroge,2021,51.96
-71,Xiaoyan Mishra,2020,47.90
-71,Xiaoyan Mishra,2021,48.66
-62,Xiaoyan Suzuki,2020,53.49
-62,Xiaoyan Suzuki,2021,49.36
-20,Yael Hernandez,2020,47.87
-20,Yael Hernandez,2021,50.89
-95,Yael Smee,2020,51.98
-95,Yael Smee,2021,49.84
-101,Yahaya Su,2020,48.74
-101,Yahaya Su,2021,48.72
-141,Yhudiyt Kozlova,2020,50.34
-141,Yhudiyt Kozlova,2021,48.96
-134,Yhudiyt Williams,2020,51.02
-134,Yhudiyt Williams,2021,49.52
-105,Yue Mahagna,2020,52.39
-105,Yue Mahagna,2021,49.01
-136,Zandile Atieno,2020,51.68
-136,Zandile Atieno,2021,51.29
-35,Zandile Lavyan,2020,49.18
-35,Zandile Lavyan,2021,50.35
+ano,pais,idCliente,nomeCliente,valor
+"__index__  __value__
+---------  ---------
+1332       2020     
+970        2020     
+128        2020     
+638        2020     
+1062       2020     
+","__index__  __value__  
+---------  -----------
+1332       Afghanistan
+970        Afghanistan
+128        Afghanistan
+638        Afghanistan
+1062       Afghanistan
+","__index__  __value__
+---------  ---------
+1332       64       
+970        380      
+128        40       
+638        253      
+1062       755      
+","__index__  __value__      
+---------  ---------------
+1332       Prasit Omondi  
+970        Lukasz Smoakley
+128        Angela Rees    
+638        Iwona Elbaz    
+1062       Masako Mondal  
+","__index__  __value__ 
+---------  ----------
+1332       1610172   
+970        1566680.05
+128        1475455.73
+638        1357066.53
+1062       1344011.69
+"
+"__index__  __value__
+---------  ---------
+282        2020     
+106        2020     
+283        2021     
+816        2020     
+1151       2021     
+","__index__  __value__
+---------  ---------
+282        Albania  
+106        Albania  
+283        Albania  
+816        Albania  
+1151       Albania  
+","__index__  __value__
+---------  ---------
+282        97       
+106        625      
+283        97       
+816        369      
+1151       12       
+","__index__  __value__       
+---------  ----------------
+282        Christa Van-Beek
+106        Anan Herrera    
+283        Christa Van-Beek
+816        Katsumi Igwe    
+1151       Miykhael Yadav  
+","__index__  __value__ 
+---------  ----------
+282        1832967.57
+106        1591964.61
+283        1471886.43
+816        1419284.63
+1151       1411089.77
+"
+"__index__  __value__
+---------  ---------
+494        2020     
+1004       2020     
+584        2020     
+624        2020     
+548        2020     
+","__index__  __value__
+---------  ---------
+494        Angola   
+1004       Angola   
+584        Angola   
+624        Angola   
+548        Angola   
+","__index__  __value__
+---------  ---------
+494        122      
+1004       74       
+584        719      
+624        627      
+548        271      
+","__index__  __value__    
+---------  -------------
+494        Grace Patel  
+1004       Mahmood Pugh 
+584        Hui Jansen   
+624        Isa Schmidt  
+548        Hendrik Meier
+","__index__  __value__ 
+---------  ----------
+494        1513899.29
+1004       1450729.33
+584        1421106.55
+624        1332050.48
+548        1323549.83
+"
+"__index__  __value__
+---------  ---------
+1378       2020     
+1976       2020     
+760        2020     
+385        2021     
+1738       2020     
+","__index__  __value__
+---------  ---------
+1378       Anguilla 
+1976       Anguilla 
+760        Anguilla 
+385        Anguilla 
+1738       Anguilla 
+","__index__  __value__
+---------  ---------
+1378       843      
+1976       862      
+760        839      
+385        33       
+1738       980      
+","__index__  __value__    
+---------  -------------
+1378       Ram Bitton   
+1976       Yuval Nowicki
+760        Juan Ohana   
+385        Erla Wafula  
+1738       Usha Kikuchi 
+","__index__  __value__ 
+---------  ----------
+1378       1774291.97
+1976       1613927.46
+760        1505354.3 
+385        1462985.93
+1738       1456045.66
+"
+"__index__  __value__
+---------  ---------
+74         2020     
+1732       2020     
+1554       2020     
+24         2020     
+278        2020     
+","__index__  __value__          
+---------  -------------------
+74         Antigua and Barbuda
+1732       Antigua and Barbuda
+1554       Antigua and Barbuda
+24         Antigua and Barbuda
+278        Antigua and Barbuda
+","__index__  __value__
+---------  ---------
+74         127      
+1732       826      
+1554       250      
+24         679      
+278        76       
+","__index__  __value__        
+---------  -----------------
+74         Amnuai Chen      
+1732       Unnur Suissa     
+1554       Sombat Mikhaylova
+24         Akira Sulaiman   
+278        Cheng Parker     
+","__index__  __value__ 
+---------  ----------
+74         1641599.21
+1732       1554272.86
+1554       1532547.03
+24         1463010.86
+278        1452645.76
+"
+"__index__  __value__
+---------  ---------
+632        2020     
+598        2020     
+1865       2021     
+1864       2020     
+863        2021     
+","__index__  __value__
+---------  ---------
+632        Argentina
+598        Argentina
+1865       Argentina
+1864       Argentina
+863        Argentina
+","__index__  __value__
+---------  ---------
+632        949      
+598        456      
+1865       53       
+1864       53       
+863        914      
+","__index__  __value__      
+---------  ---------------
+632        Isah Castro    
+598        Idris Vasileva 
+1865       Xolani Morozov 
+1864       Xolani Morozov 
+863        Koichi Mitchell
+","__index__  __value__ 
+---------  ----------
+632        1786285.77
+598        1705728.76
+1865       1697245.84
+1864       1501708.93
+863        1283870.34
+"
+"__index__  __value__
+---------  ---------
+1708       2020     
+616        2020     
+1152       2020     
+1709       2021     
+1510       2020     
+","__index__  __value__ 
+---------  ----------
+1708       Azerbaijan
+616        Azerbaijan
+1152       Azerbaijan
+1709       Azerbaijan
+1510       Azerbaijan
+","__index__  __value__
+---------  ---------
+1708       57       
+616        87       
+1152       386      
+1709       57       
+1510       775      
+","__index__  __value__  
+---------  -----------
+1708       Themba Yao 
+616        Irina Nayak
+1152       Miykhal Lal
+1709       Themba Yao 
+1510       Shay Hu    
+","__index__  __value__ 
+---------  ----------
+1708       1838688.67
+616        1718766.76
+1152       1471061.55
+1709       1470431.43
+1510       1408438.19
+"
+"__index__  __value__
+---------  ---------
+530        2020     
+938        2020     
+346        2020     
+916        2020     
+738        2020     
+","__index__  __value__
+---------  ---------
+530        Bahrain  
+938        Bahrain  
+346        Bahrain  
+916        Bahrain  
+738        Bahrain  
+","__index__  __value__
+---------  ---------
+530        106      
+938        668      
+346        984      
+916        289      
+738        831      
+","__index__  __value__         
+---------  ------------------
+530        Hauwa Mabaso      
+938        Lilian Rowlands   
+346        Edda Santiago     
+916        Laura Johnson     
+738        Jonathan Rodriguez
+","__index__  __value__ 
+---------  ----------
+530        1639753.72
+938        1607005.18
+346        1593843.4 
+916        1585942.03
+738        1525603.54
+"
+"__index__  __value__
+---------  ---------
+1883       2021     
+1722       2020     
+930        2020     
+1882       2020     
+1430       2020     
+","__index__  __value__
+---------  ---------
+1883       Belarus  
+1722       Belarus  
+930        Belarus  
+1882       Belarus  
+1430       Belarus  
+","__index__  __value__
+---------  ---------
+1883       80       
+1722       418      
+930        489      
+1882       80       
+1430       613      
+","__index__  __value__   
+---------  ------------
+1883       Yahaya Ueda 
+1722       Tomiko Zajac
+930        Lijun Carter
+1882       Yahaya Ueda 
+1430       Roy Aliyu   
+","__index__  __value__ 
+---------  ----------
+1883       1676226.34
+1722       1534718.25
+930        1460083.79
+1882       1441941.63
+1430       1439373.91
+"
+"__index__  __value__
+---------  ---------
+299        2021     
+250        2020     
+1902       2020     
+110        2020     
+1974       2020     
+","__index__  __value__
+---------  ---------
+299        Belize   
+250        Belize   
+1902       Belize   
+110        Belize   
+1974       Belize   
+","__index__  __value__
+---------  ---------
+299        733      
+250        666      
+1902       882      
+110        391      
+1974       161      
+","__index__  __value__         
+---------  ------------------
+299        Cristina Lehmann  
+250        Chan Yang         
+1902       Yasuo Yamaguchi   
+110        Anastasiya Sawicki
+1974       Yuval Medina      
+","__index__  __value__ 
+---------  ----------
+299        1752613.74
+250        1507844.67
+1902       1479943.79
+110        1479375.71
+1974       1477181.4 
+"
+"__index__  __value__
+---------  ---------
+1929       2021     
+32         2020     
+1748       2020     
+758        2020     
+1373       2021     
+","__index__  __value__
+---------  ---------
+1929       Benin    
+32         Benin    
+1748       Benin    
+758        Benin    
+1373       Benin    
+","__index__  __value__
+---------  ---------
+1929       954      
+32         983      
+1748       555      
+758        861      
+1373       922      
+","__index__  __value__           
+---------  --------------------
+1929       Yong Cai            
+32         Aleksander Kobayashi
+1748       Uwe Nikolaev        
+758        Juan Martinez       
+1373       Rajesh Bello        
+","__index__  __value__ 
+---------  ----------
+1929       1699030.03
+32         1654089.18
+1748       1593317.15
+758        1539018   
+1373       1498585.27
+"
+"__index__  __value__
+---------  ---------
+266        2020     
+762        2020     
+671        2021     
+784        2020     
+194        2020     
+","__index__  __value__
+---------  ---------
+266        Bolivia  
+762        Bolivia  
+671        Bolivia  
+784        Bolivia  
+194        Bolivia  
+","__index__  __value__
+---------  ---------
+266        558      
+762        720      
+671        290      
+784        399      
+194        854      
+","__index__  __value__      
+---------  ---------------
+266        Charoen Kaur   
+762        Juan Smirnova  
+671        Janusz Clark   
+784        Karen Fuchs    
+194        Birgit Murakami
+","__index__  __value__ 
+---------  ----------
+266        1714368.86
+762        1701487.61
+671        1580089.16
+784        1563336.91
+194        1562137.14
+"
+"__index__  __value__
+---------  ---------
+142        2020     
+1666       2020     
+648        2020     
+1934       2020     
+508        2020     
+","__index__  __value__
+---------  ---------
+142        Brazil   
+1666       Brazil   
+648        Brazil   
+1934       Brazil   
+508        Brazil   
+","__index__  __value__
+---------  ---------
+142        825      
+1666       111      
+648        615      
+1934       770      
+508        325      
+","__index__  __value__      
+---------  ---------------
+142        Anong Dominguez
+1666       Svetlana Adri  
+648        Jakub Garcia   
+1934       Yong Yang      
+508        Hadiza Singh   
+","__index__  __value__ 
+---------  ----------
+142        2003498.22
+1666       1922951.65
+648        1746280.85
+1934       1528600.67
+508        1500212.86
+"
+"__index__  __value__
+---------  ---------
+1334       2020     
+1280       2020     
+778        2020     
+1384       2020     
+1281       2021     
+","__index__  __value__                                          
+---------  ---------------------------------------------------
+1334       British Indian Ocean Territory (Chagos Archipelago)
+1280       British Indian Ocean Territory (Chagos Archipelago)
+778        British Indian Ocean Territory (Chagos Archipelago)
+1384       British Indian Ocean Territory (Chagos Archipelago)
+1281       British Indian Ocean Territory (Chagos Archipelago)
+","__index__  __value__
+---------  ---------
+1334       602      
+1280       334      
+778        352      
+1384       623      
+1281       334      
+","__index__  __value__       
+---------  ----------------
+1334       Prasit Parker   
+1280       Paulina Arnarson
+778        Kamil Volkov    
+1384       Ramesh Bauer    
+1281       Paulina Arnarson
+","__index__  __value__ 
+---------  ----------
+1334       1553182.71
+1280       1394800.12
+778        1357123.69
+1384       1349432.48
+1281       1329225.8 
+"
+"__index__  __value__
+---------  ---------
+1806       2020     
+224        2020     
+198        2020     
+506        2020     
+741        2021     
+","__index__  __value__   
+---------  ------------
+1806       Burkina Faso
+224        Burkina Faso
+198        Burkina Faso
+506        Burkina Faso
+741        Burkina Faso
+","__index__  __value__
+---------  ---------
+1806       270      
+224        428      
+198        687      
+506        685      
+741        141      
+","__index__  __value__          
+---------  -------------------
+1806       Wilai Alvarez      
+224        Busisiwe Richter   
+198        Blessing Fujii     
+506        Guy Vega           
+741        Jonathan Rungrueang
+","__index__  __value__ 
+---------  ----------
+1806       1726928.03
+224        1568119.57
+198        1537751.93
+506        1489210.08
+741        1443450.6 
+"
+"__index__  __value__
+---------  ---------
+838        2020     
+1540       2020     
+1340       2020     
+132        2020     
+133        2021     
+","__index__  __value__
+---------  ---------
+838        Burundi  
+1540       Burundi  
+1340       Burundi  
+132        Burundi  
+133        Burundi  
+","__index__  __value__
+---------  ---------
+838        355      
+1540       762      
+1340       637      
+132        319      
+133        319      
+","__index__  __value__          
+---------  -------------------
+838        Kenneth Gumede     
+1540       Sibongile Ostrowski
+1340       Pushpa Lange       
+132        Anil Wang          
+133        Anil Wang          
+","__index__  __value__ 
+---------  ----------
+838        1674353.31
+1540       1623978.03
+1340       1577021.29
+132        1496094.58
+133        1412876.95
+"
+"__index__  __value__
+---------  ---------
+688        2020     
+710        2020     
+174        2020     
+1092       2020     
+1950       2020     
+","__index__  __value__
+---------  ---------
+688        Canada   
+710        Canada   
+174        Canada   
+1092       Canada   
+1950       Canada   
+","__index__  __value__
+---------  ---------
+688        338      
+710        210      
+174        282      
+1092       142      
+1950       314      
+","__index__  __value__       
+---------  ----------------
+688        Jerzy Van-Dam   
+710        Joan Inoue      
+174        Barbara Smirnova
+1092       Mercy Saetang   
+1950       Yu Werner       
+","__index__  __value__ 
+---------  ----------
+688        1662802.91
+710        1621322.66
+174        1531034.04
+1092       1486864.11
+1950       1458300.81
+"
+"__index__  __value__
+---------  ---------
+636        2020     
+1910       2020     
+626        2020     
+1996       2020     
+1941       2021     
+","__index__  __value__               
+---------  ------------------------
+636        Central African Republic
+1910       Central African Republic
+626        Central African Republic
+1996       Central African Republic
+1941       Central African Republic
+","__index__  __value__
+---------  ---------
+636        925      
+1910       638      
+626        626      
+1996       143      
+1941       546      
+","__index__  __value__      
+---------  ---------------
+636        Isah Paswan    
+1910       Yhudah Majewski
+626        Isaac Schneider
+1996       Zhen Vazquez   
+1941       Yoshiko Ram    
+","__index__  __value__ 
+---------  ----------
+636        1617625.06
+1910       1522479.96
+626        1493958.37
+1996       1346268.05
+1941       1341564.98
+"
+"__index__  __value__
+---------  ---------
+262        2020     
+1842       2020     
+145        2021     
+1843       2021     
+1470       2020     
+","__index__  __value__
+---------  ---------
+262        Chile    
+1842       Chile    
+145        Chile    
+1843       Chile    
+1470       Chile    
+","__index__  __value__
+---------  ---------
+262        592      
+1842       951      
+145        876      
+1843       951      
+1470       904      
+","__index__  __value__     
+---------  --------------
+262        Chao Zwane    
+1842       Xiaoping Singh
+145        Anong Ikeda   
+1843       Xiaoping Singh
+1470       Samran Ogawa  
+","__index__  __value__ 
+---------  ----------
+262        1767360.49
+1842       1718234.31
+145        1384789.35
+1843       1348472.42
+1470       1346485.04
+"
+"__index__  __value__
+---------  ---------
+1494       2020     
+1583       2021     
+446        2020     
+1948       2020     
+447        2021     
+","__index__  __value__       
+---------  ----------------
+1494       Christmas Island
+1583       Christmas Island
+446        Christmas Island
+1948       Christmas Island
+447        Christmas Island
+","__index__  __value__
+---------  ---------
+1494       118      
+1583       500      
+446        642      
+1948       455      
+447        642      
+","__index__  __value__      
+---------  ---------------
+1494       Sergey Wilk    
+1583       Sommai Hauksson
+446        Fiona Muhammed 
+1948       Yu Sombun      
+447        Fiona Muhammed 
+","__index__  __value__ 
+---------  ----------
+1494       1573520.17
+1583       1530231.61
+446        1485644.74
+1948       1476919.95
+447        1443196.75
+"
+"__index__  __value__
+---------  ---------
+1946       2020     
+256        2020     
+1621       2021     
+1398       2020     
+1483       2021     
+","__index__  __value__              
+---------  -----------------------
+1946       Cocos (Keeling) Islands
+256        Cocos (Keeling) Islands
+1621       Cocos (Keeling) Islands
+1398       Cocos (Keeling) Islands
+1483       Cocos (Keeling) Islands
+","__index__  __value__
+---------  ---------
+1946       986      
+256        553      
+1621       647      
+1398       990      
+1483       506      
+","__index__  __value__    
+---------  -------------
+1946       Yu Haraldsson
+256        Chao Bunmi   
+1621       Suman Reyes  
+1398       Rekha Kimani 
+1483       Santosh Gomez
+","__index__  __value__ 
+---------  ----------
+1946       1564887.05
+256        1535372.91
+1621       1524946.08
+1398       1415569.43
+1483       1395155.05
+"
+"__index__  __value__
+---------  ---------
+642        2020     
+1322       2020     
+1670       2020     
+153        2021     
+1255       2021     
+","__index__  __value__
+---------  ---------
+642        Colombia 
+1322       Colombia 
+1670       Colombia 
+153        Colombia 
+1255       Colombia 
+","__index__  __value__
+---------  ---------
+642        441      
+1322       67       
+1670       327      
+153        856      
+1255       189      
+","__index__  __value__      
+---------  ---------------
+642        Jacobus Esteban
+1322       Ping Delgado   
+1670       Tadashi Flores 
+153        Arnar Muthoni  
+1255       Nushi Garza    
+","__index__  __value__ 
+---------  ----------
+642        1648826.38
+1322       1595496.04
+1670       1365892.06
+153        1365237.23
+1255       1341753.91
+"
+"__index__  __value__
+---------  ---------
+630        2020     
+830        2020     
+435        2021     
+200        2020     
+434        2020     
+","__index__  __value__
+---------  ---------
+630        Comoros  
+830        Comoros  
+435        Comoros  
+200        Comoros  
+434        Comoros  
+","__index__  __value__
+---------  ---------
+630        478      
+830        918      
+435        844      
+200        316      
+434        844      
+","__index__  __value__       
+---------  ----------------
+630        Isabel Llewellyn
+830        Keiko Rivera    
+435        Fatima Mutuku   
+200        Bongani Baba    
+434        Fatima Mutuku   
+","__index__  __value__ 
+---------  ----------
+630        1915037.47
+830        1516016.64
+435        1492335.87
+200        1329810.09
+434        1312921.33
+"
+"__index__  __value__
+---------  ---------
+1048       2020     
+1488       2020     
+1108       2020     
+1580       2020     
+1604       2020     
+","__index__  __value__
+---------  ---------
+1048       Congo    
+1488       Congo    
+1108       Congo    
+1580       Congo    
+1604       Congo    
+","__index__  __value__
+---------  ---------
+1048       39       
+1488       784      
+1108       192      
+1580       359      
+1604       633      
+","__index__  __value__    
+---------  -------------
+1048       Martha Kibet 
+1488       Sawat Svoboda
+1108       Miguel Peters
+1580       Somkiat Sani 
+1604       Stephen Mutua
+","__index__  __value__ 
+---------  ----------
+1048       1728052   
+1488       1492270.35
+1108       1475439.24
+1580       1447023.23
+1604       1340044.99
+"
+"__index__  __value__
+---------  ---------
+890        2020     
+1185       2021     
+1858       2020     
+576        2020     
+46         2020     
+","__index__  __value__ 
+---------  ----------
+890        Costa Rica
+1185       Costa Rica
+1858       Costa Rica
+576        Costa Rica
+46         Costa Rica
+","__index__  __value__
+---------  ---------
+890        915      
+1185       649      
+1858       133      
+576        100      
+46         445      
+","__index__  __value__   
+---------  ------------
+890        Kun Chided  
+1185       Mpho Luo    
+1858       Xin Zawadzki
+576        Hong Hasna  
+46         Ali Jabarin 
+","__index__  __value__ 
+---------  ----------
+890        1475163.06
+1185       1461051.98
+1858       1404356.26
+576        1355955.26
+46         1306113.74
+"
+"__index__  __value__
+---------  ---------
+60         2020     
+882        2020     
+196        2020     
+1034       2020     
+766        2020     
+","__index__  __value__
+---------  ---------
+60         Croatia  
+882        Croatia  
+196        Croatia  
+1034       Croatia  
+766        Croatia  
+","__index__  __value__
+---------  ---------
+60         734      
+882        443      
+196        830      
+1034       88       
+766        499      
+","__index__  __value__        
+---------  -----------------
+60         Aminu Hongthong  
+882        Kristinn Muhammad
+196        Bjarni Peter     
+1034       Marina Vargas    
+766        Kabiru Kaur      
+","__index__  __value__ 
+---------  ----------
+60         1878343.52
+882        1667931.37
+196        1559676.7 
+1034       1471844.11
+766        1422836.68
+"
+"__index__  __value__
+---------  ---------
+1257       2021     
+1256       2020     
+1343       2021     
+1130       2020     
+712        2020     
+","__index__  __value__
+---------  ---------
+1257       Cyprus   
+1256       Cyprus   
+1343       Cyprus   
+1130       Cyprus   
+712        Cyprus   
+","__index__  __value__
+---------  ---------
+1257       578      
+1256       578      
+1343       234      
+1130       675      
+712        360      
+","__index__  __value__       
+---------  ----------------
+1257       Nushi Maier     
+1256       Nushi Maier     
+1343       Pushpa Moshe    
+1130       Ming Tomaszewski
+712        Joan Okada      
+","__index__  __value__ 
+---------  ----------
+1257       1731147.23
+1256       1670154.9 
+1343       1498804.07
+1130       1498750.76
+712        1482404.42
+"
+"__index__  __value__
+---------  ---------
+496        2020     
+1362       2020     
+1043       2021     
+310        2020     
+1002       2020     
+","__index__  __value__     
+---------  --------------
+496        Czech Republic
+1362       Czech Republic
+1043       Czech Republic
+310        Czech Republic
+1002       Czech Republic
+","__index__  __value__
+---------  ---------
+496        631      
+1362       955      
+1043       916      
+310        262      
+1002       743      
+","__index__  __value__         
+---------  ------------------
+496        Grace Wanjala     
+1362       Raj Li            
+1043       Mark Ceng         
+310        Darya Tanaka      
+1002       Mahmood Jakubowski
+","__index__  __value__ 
+---------  ----------
+496        1694473.61
+1362       1647418.36
+1043       1569072.11
+310        1550524.32
+1002       1485758.58
+"
+"__index__  __value__
+---------  ---------
+540        2020     
+607        2021     
+1503       2021     
+1689       2021     
+541        2021     
+","__index__  __value__         
+---------  ------------------
+540        Dominican Republic
+607        Dominican Republic
+1503       Dominican Republic
+1689       Dominican Republic
+541        Dominican Republic
+","__index__  __value__
+---------  ---------
+540        957      
+607        147      
+1503       292      
+1689       423      
+541        957      
+","__index__  __value__     
+---------  --------------
+540        Heike Ibrahim 
+607        Inga Morgan   
+1503       Shanti Mazurek
+1689       Tebogo Mahagna
+541        Heike Ibrahim 
+","__index__  __value__ 
+---------  ----------
+540        1788848.71
+607        1589508.56
+1503       1390867.44
+1689       1360768.97
+541        1346220.72
+"
+"__index__  __value__
+---------  ---------
+1246       2020     
+1526       2020     
+470        2020     
+1545       2021     
+1840       2020     
+","__index__  __value__
+---------  ---------
+1246       Ecuador  
+1526       Ecuador  
+470        Ecuador  
+1545       Ecuador  
+1840       Ecuador  
+","__index__  __value__
+---------  ---------
+1246       735      
+1526       11       
+470        207      
+1545       881      
+1840       412      
+","__index__  __value__         
+---------  ------------------
+1246       Nokuthula Nayak   
+1526       Shizuko Mhamid    
+470        Galina Dlamini    
+1545       Sibusiso Matsumoto
+1840       Xiaoping Pillay   
+","__index__  __value__ 
+---------  ----------
+1246       1575010.78
+1526       1492501.43
+470        1469943.07
+1545       1262908.39
+1840       1211813.71
+"
+"__index__  __value__
+---------  ---------
+424        2020     
+1178       2020     
+136        2020     
+137        2021     
+1937       2021     
+","__index__  __value__
+---------  ---------
+424        Estonia  
+1178       Estonia  
+136        Estonia  
+137        Estonia  
+1937       Estonia  
+","__index__  __value__
+---------  ---------
+424        586      
+1178       59       
+136        956      
+137        956      
+1937       502      
+","__index__  __value__     
+---------  --------------
+424        Fatima Bennett
+1178       Moshe Wu      
+136        Anita Sarkar  
+137        Anita Sarkar  
+1937       Yoshie Omondi 
+","__index__  __value__ 
+---------  ----------
+424        1576263.71
+1178       1505448.59
+136        1455878.06
+137        1443810.48
+1937       1434128.63
+"
+"__index__  __value__
+---------  ---------
+662        2020     
+878        2020     
+1204       2020     
+244        2020     
+743        2021     
+","__index__  __value__
+---------  ---------
+662        Ethiopia 
+878        Ethiopia 
+1204       Ethiopia 
+244        Ethiopia 
+743        Ethiopia 
+","__index__  __value__
+---------  ---------
+662        312      
+878        972      
+1204       575      
+244        858      
+743        520      
+","__index__  __value__            
+---------  ---------------------
+662        Jane Matsumoto       
+878        Krishna Ojo          
+1204       Nancy Thongdi        
+244        Caroline Jones       
+743        Jose-Antonio Govender
+","__index__  __value__ 
+---------  ----------
+662        1576122.69
+878        1521308.67
+1204       1502671.99
+244        1411400.91
+743        1394120.67
+"
+"__index__  __value__
+---------  ---------
+126        2020     
+1868       2020     
+1139       2021     
+557        2021     
+452        2020     
+","__index__  __value__    
+---------  -------------
+126        Faroe Islands
+1868       Faroe Islands
+1139       Faroe Islands
+557        Faroe Islands
+452        Faroe Islands
+","__index__  __value__
+---------  ---------
+126        542      
+1868       14       
+1139       737      
+557        357      
+452        135      
+","__index__  __value__       
+---------  ----------------
+126        Andri Karanja   
+1868       Yaakv Haraldsson
+1139       Miriam Michalski
+557        Hildur Saha     
+452        Francis Michalak
+","__index__  __value__ 
+---------  ----------
+126        1635590.62
+1868       1564935.4 
+1139       1510317.74
+557        1491433.92
+452        1411072.5 
+"
+"__index__  __value__
+---------  ---------
+360        2020     
+1429       2021     
+1226       2020     
+1428       2020     
+1227       2021     
+","__index__  __value__
+---------  ---------
+360        France   
+1429       France   
+1226       France   
+1428       France   
+1227       France   
+","__index__  __value__
+---------  ---------
+360        237      
+1429       34       
+1226       495      
+1428       34       
+1227       495      
+","__index__  __value__      
+---------  ---------------
+360        Elisabeth Price
+1429       Rosa Yamamoto  
+1226       Nittaya Khoza  
+1428       Rosa Yamamoto  
+1227       Nittaya Khoza  
+","__index__  __value__ 
+---------  ----------
+360        1511378.3 
+1429       1485036.64
+1226       1346763.7 
+1428       1330548.55
+1227       1313368.68
+"
+"__index__  __value__
+---------  ---------
+1032       2020     
+1854       2020     
+1500       2020     
+193        2021     
+121        2021     
+","__index__  __value__                  
+---------  ---------------------------
+1032       French Southern Territories
+1854       French Southern Territories
+1500       French Southern Territories
+193        French Southern Territories
+121        French Southern Territories
+","__index__  __value__
+---------  ---------
+1032       865      
+1854       182      
+1500       54       
+193        426      
+121        174      
+","__index__  __value__           
+---------  --------------------
+1032       Maria-Pilar Pfeiffer
+1854       Xin Omondi          
+1500       Shankar Pavlov      
+193        Birgir Njoroge      
+121        Andrew Hoekstra     
+","__index__  __value__ 
+---------  ----------
+1032       1561225.18
+1854       1497217.81
+1500       1458048.71
+193        1455617.89
+121        1388907.64
+"
+"__index__  __value__
+---------  ---------
+426        2020     
+1648       2020     
+438        2020     
+1007       2021     
+427        2021     
+","__index__  __value__
+---------  ---------
+426        Gabon    
+1648       Gabon    
+438        Gabon    
+1007       Gabon    
+427        Gabon    
+","__index__  __value__
+---------  ---------
+426        43       
+1648       985      
+438        738      
+1007       926      
+427        43       
+","__index__  __value__        
+---------  -----------------
+426        Fatima Endo      
+1648       Suresh Nkosi     
+438        Fatima Yamazaki  
+1007       Manfred Jankowski
+427        Fatima Endo      
+","__index__  __value__ 
+---------  ----------
+426        1704453.09
+1648       1637317.68
+438        1501355.23
+1007       1488783.11
+427        1465391.16
+"
+"__index__  __value__
+---------  ---------
+324        2020     
+1020       2020     
+102        2020     
+1624       2020     
+103        2021     
+","__index__  __value__
+---------  ---------
+324        Germany  
+1020       Germany  
+102        Germany  
+1624       Germany  
+103        Germany  
+","__index__  __value__
+---------  ---------
+324        870      
+1020       824      
+102        180      
+1624       29       
+103        180      
+","__index__  __value__     
+---------  --------------
+324        Diego Nakajima
+1020       Margaret Akpan
+102        Anah Guerrero 
+1624       Suman Van-Dam 
+103        Anah Guerrero 
+","__index__  __value__ 
+---------  ----------
+324        1415672.65
+1020       1397881.72
+102        1381525.07
+1624       1300367.89
+103        1236538.22
+"
+"__index__  __value__
+---------  ---------
+1778       2020     
+131        2021     
+130        2020     
+1850       2020     
+528        2020     
+","__index__  __value__
+---------  ---------
+1778       Greece   
+131        Greece   
+130        Greece   
+1850       Greece   
+528        Greece   
+","__index__  __value__
+---------  ---------
+1778       655      
+131        894      
+130        894      
+1850       493      
+528        275      
+","__index__  __value__       
+---------  ----------------
+1778       Watsana Marek   
+131        Anil Suarez     
+130        Anil Suarez     
+1850       Xiaoyan Mitchell
+528        Hauwa Lewis     
+","__index__  __value__ 
+---------  ----------
+1778       1596105.32
+131        1588779.35
+130        1373307.37
+1850       1316042.75
+528        1244622.08
+"
+"__index__  __value__
+---------  ---------
+1311       2021     
+1848       2020     
+568        2020     
+242        2020     
+1972       2020     
+","__index__  __value__
+---------  ---------
+1311       Guinea   
+1848       Guinea   
+568        Guinea   
+242        Guinea   
+1972       Guinea   
+","__index__  __value__
+---------  ---------
+1311       337      
+1848       130      
+568        552      
+242        157      
+1972       382      
+","__index__  __value__          
+---------  -------------------
+1311       Philip Santos      
+1848       Xiaoyan Kondo      
+568        Hiroshi Bakker     
+242        Caroline Gunnarsson
+1972       Yuval Hopkins      
+","__index__  __value__ 
+---------  ----------
+1311       1538338.33
+1848       1469763.43
+568        1457905.12
+242        1438842.33
+1972       1348572.51
+"
+"__index__  __value__
+---------  ---------
+704        2020     
+118        2020     
+416        2020     
+1764       2020     
+312        2020     
+","__index__  __value__    
+---------  -------------
+704        Guinea-Bissau
+118        Guinea-Bissau
+416        Guinea-Bissau
+1764       Guinea-Bissau
+312        Guinea-Bissau
+","__index__  __value__
+---------  ---------
+704        436      
+118        953      
+416        101      
+1764       196      
+312        139      
+","__index__  __value__        
+---------  -----------------
+704        Jianping Eze     
+118        Andreas Cheruiyot
+416        Ewa Arai         
+1764       Viktor Govender  
+312        Denis Abubakar   
+","__index__  __value__ 
+---------  ----------
+704        1815823.78
+118        1559416.39
+416        1450127.48
+1764       1418614.53
+312        1343856.7 
+"
+"__index__  __value__
+---------  ---------
+316        2020     
+836        2020     
+1306       2020     
+150        2020     
+1484       2020     
+","__index__  __value__
+---------  ---------
+316        Hungary  
+836        Hungary  
+1306       Hungary  
+150        Hungary  
+1484       Hungary  
+","__index__  __value__
+---------  ---------
+316        248      
+836        732      
+1306       703      
+150        457      
+1484       381      
+","__index__  __value__      
+---------  ---------------
+316        Denis Sangthong
+836        Kelvin Richards
+1306       Petrus Adri    
+150        Anton Ward     
+1484       Santosh Hahn   
+","__index__  __value__ 
+---------  ----------
+316        1691093.22
+836        1565547.2 
+1306       1517761.16
+150        1479029.48
+1484       1466291.08
+"
+"__index__  __value__
+---------  ---------
+694        2020     
+1282       2020     
+1956       2020     
+1822       2020     
+640        2020     
+","__index__  __value__
+---------  ---------
+694        Indonesia
+1282       Indonesia
+1956       Indonesia
+1822       Indonesia
+640        Indonesia
+","__index__  __value__
+---------  ---------
+694        241      
+1282       547      
+1956       919      
+1822       851      
+640        932      
+","__index__  __value__       
+---------  ----------------
+694        Jesus Salazar   
+1282       Paulina Chebet  
+1956       Yuliya Agbaria  
+1822       Xiang Parry     
+640        Iwona Tshabalala
+","__index__  __value__ 
+---------  ----------
+694        1931837.81
+1282       1676643.67
+1956       1669850.05
+1822       1610692.79
+640        1468856.78
+"
+"__index__  __value__
+---------  ---------
+807        2021     
+1870       2020     
+1863       2021     
+1871       2021     
+1915       2021     
+","__index__  __value__
+---------  ---------
+807        Iran     
+1870       Iran     
+1863       Iran     
+1871       Iran     
+1915       Iran     
+","__index__  __value__
+---------  ---------
+807        58       
+1870       636      
+1863       850      
+1871       636      
+1915       773      
+","__index__  __value__    
+---------  -------------
+807        Karolina Yao 
+1870       Yaakv Lehmann
+1863       Xolani Malkah
+1871       Yaakv Lehmann
+1915       Ying Lu      
+","__index__  __value__ 
+---------  ----------
+807        1818801.14
+1870       1643326.14
+1863       1622249.26
+1871       1436015.97
+1915       1414977.73
+"
+"__index__  __value__
+---------  ---------
+1742       2020     
+1640       2020     
+580        2020     
+386        2020     
+246        2020     
+","__index__  __value__  
+---------  -----------
+1742       Isle of Man
+1640       Isle of Man
+580        Isle of Man
+386        Isle of Man
+246        Isle of Man
+","__index__  __value__
+---------  ---------
+1742       47       
+1640       814      
+580        435      
+386        559      
+246        609      
+","__index__  __value__        
+---------  -----------------
+1742       Usman Omondi     
+1640       Sunita Saengthong
+580        Hong Rubio       
+386        Erna Photsi      
+246        Chan Mohammed    
+","__index__  __value__ 
+---------  ----------
+1742       1625627.41
+1640       1575824.74
+580        1543163.76
+386        1444143.94
+246        1431928.44
+"
+"__index__  __value__
+---------  ---------
+1590       2020     
+1036       2020     
+1474       2020     
+134        2020     
+1726       2020     
+","__index__  __value__                      
+---------  -------------------------------
+1590       Lao Peoples Democratic Republic
+1036       Lao Peoples Democratic Republic
+1474       Lao Peoples Democratic Republic
+134        Lao Peoples Democratic Republic
+1726       Lao Peoples Democratic Republic
+","__index__  __value__
+---------  ---------
+1590       778      
+1036       827      
+1474       345      
+134        461      
+1726       266      
+","__index__  __value__       
+---------  ----------------
+1590       Somphon Jenkins 
+1036       Marina Walter   
+1474       Samuel Kowalczyk
+134        Anita Ding      
+1726       Toshio Schmitt  
+","__index__  __value__ 
+---------  ----------
+1590       1469495.64
+1036       1441413.9 
+1474       1422538.38
+134        1419305.87
+1726       1417111   
+"
+"__index__  __value__
+---------  ---------
+271        2021     
+1575       2021     
+1574       2020     
+270        2020     
+1550       2020     
+","__index__  __value__
+---------  ---------
+271        Latvia   
+1575       Latvia   
+1574       Latvia   
+270        Latvia   
+1550       Latvia   
+","__index__  __value__
+---------  ---------
+271        261      
+1575       978      
+1574       978      
+270        261      
+1550       763      
+","__index__  __value__     
+---------  --------------
+271        Chayah Flores 
+1575       Somkiat Clarke
+1574       Somkiat Clarke
+270        Chayah Flores 
+1550       Sita Kariuki  
+","__index__  __value__ 
+---------  ----------
+271        1688347.96
+1575       1606904.67
+1574       1543252.21
+270        1367473.84
+1550       1332390.19
+"
+"__index__  __value__
+---------  ---------
+1059       2021     
+1414       2020     
+1890       2020     
+362        2020     
+1891       2021     
+","__index__  __value__    
+---------  -------------
+1059       Liechtenstein
+1414       Liechtenstein
+1890       Liechtenstein
+362        Liechtenstein
+1891       Liechtenstein
+","__index__  __value__
+---------  ---------
+1059       544      
+1414       587      
+1890       434      
+362        700      
+1891       434      
+","__index__  __value__     
+---------  --------------
+1059       Maryam Wafula 
+1414       Roman Shi     
+1890       Yan Goto      
+362        Eliyahu Flores
+1891       Yan Goto      
+","__index__  __value__ 
+---------  ----------
+1059       2182903.64
+1414       1553773.14
+1890       1493728.62
+362        1309278.41
+1891       1277955.66
+"
+"__index__  __value__
+---------  ---------
+1532       2020     
+635        2021     
+1090       2020     
+1533       2021     
+66         2020     
+","__index__  __value__
+---------  ---------
+1532       Macao    
+635        Macao    
+1090       Macao    
+1533       Macao    
+66         Macao    
+","__index__  __value__
+---------  ---------
+1532       214      
+635        311      
+1090       453      
+1533       214      
+66         321      
+","__index__  __value__      
+---------  ---------------
+1532       Shoshanah Green
+635        Isah Mikhaylov 
+1090       Mercy Hendriks 
+1533       Shoshanah Green
+66         Amiyt Cai      
+","__index__  __value__ 
+---------  ----------
+1532       1605195.74
+635        1504030.94
+1090       1467514.42
+1533       1459126.31
+66         1433313.29
+"
+"__index__  __value__
+---------  ---------
+1058       2020     
+1300       2020     
+1448       2020     
+1110       2020     
+589        2021     
+","__index__  __value__
+---------  ---------
+1058       Mauritius
+1300       Mauritius
+1448       Mauritius
+1110       Mauritius
+589        Mauritius
+","__index__  __value__
+---------  ---------
+1058       188      
+1300       942      
+1448       239      
+1110       287      
+589        771      
+","__index__  __value__           
+---------  --------------------
+1058       Maryam Wafula       
+1300       Petra Hashimoto     
+1448       Sachiko Mor         
+1110       Miguel-Angel Petrova
+589        Hui Shapiro         
+","__index__  __value__ 
+---------  ----------
+1058       2591842.92
+1300       1969376.28
+1448       1719534.41
+1110       1586104.98
+589        1583149.04
+"
+"__index__  __value__
+---------  ---------
+1344       2020     
+55         2021     
+350        2020     
+54         2020     
+618        2020     
+","__index__  __value__
+---------  ---------
+1344       Mayotte  
+55         Mayotte  
+350        Mayotte  
+54         Mayotte  
+618        Mayotte  
+","__index__  __value__
+---------  ---------
+1344       6        
+55         664      
+350        115      
+54         664      
+618        93       
+","__index__  __value__         
+---------  ------------------
+1344       Qing Buthelezi    
+55         Aliyu Friedman    
+350        Ekaterina Castillo
+54         Aliyu Friedman    
+618        Irina Wairimu     
+","__index__  __value__ 
+---------  ----------
+1344       1803251.07
+55         1668065.23
+350        1543174   
+54         1505781.1 
+618        1451069.92
+"
+"__index__  __value__
+---------  ---------
+422        2020     
+290        2020     
+1436       2020     
+12         2020     
+13         2021     
+","__index__  __value__
+---------  ---------
+422        Moldova  
+290        Moldova  
+1436       Moldova  
+12         Moldova  
+13         Moldova  
+","__index__  __value__
+---------  ---------
+422        306      
+290        205      
+1436       767      
+12         563      
+13         563      
+","__index__  __value__         
+---------  ------------------
+422        Fatima Bekher     
+290        Christopher Oakley
+1436       Rut Hongthong     
+12         Agata Okeke       
+13         Agata Okeke       
+","__index__  __value__ 
+---------  ----------
+422        1735133.27
+290        1557332.47
+1436       1402433.03
+12         1399207.39
+13         1378029.8 
+"
+"__index__  __value__
+---------  ---------
+782        2020     
+1660       2020     
+1176       2020     
+1304       2020     
+945        2021     
+","__index__  __value__
+---------  ---------
+782        Monaco   
+1660       Monaco   
+1176       Monaco   
+1304       Monaco   
+945        Monaco   
+","__index__  __value__
+---------  ---------
+782        487      
+1660       62       
+1176       114      
+1304       280      
+945        614      
+","__index__  __value__       
+---------  ----------------
+782        Karen Bowen     
+1660       Sushila Matthews
+1176       Moses Michalski 
+1304       Petra Macharia  
+945        Lin Langat      
+","__index__  __value__ 
+---------  ----------
+782        1702493.04
+1660       1667675.35
+1176       1604841.81
+1304       1582870.4 
+945        1452946.67
+"
+"__index__  __value__
+---------  ---------
+578        2020     
+1820       2020     
+1780       2020     
+1774       2020     
+538        2020     
+","__index__  __value__
+---------  ---------
+578        Mongolia 
+1820       Mongolia 
+1780       Mongolia 
+1774       Mongolia 
+538        Mongolia 
+","__index__  __value__
+---------  ---------
+578        330      
+1820       129      
+1780       995      
+1774       846      
+538        933      
+","__index__  __value__     
+---------  --------------
+578        Hong Powell   
+1820       Xiang Isaac   
+1780       Watsana Okafor
+1774       Wanphen Fiala 
+538        Heike Fang    
+","__index__  __value__ 
+---------  ----------
+578        1798606.75
+1820       1532815.45
+1780       1461829.47
+1774       1424653.5 
+538        1395849.84
+"
+"__index__  __value__
+---------  ---------
+430        2020     
+336        2020     
+572        2020     
+431        2021     
+337        2021     
+","__index__  __value__ 
+---------  ----------
+430        Montenegro
+336        Montenegro
+572        Montenegro
+431        Montenegro
+337        Montenegro
+","__index__  __value__
+---------  ---------
+430        5        
+336        582      
+572        158      
+431        5        
+337        582      
+","__index__  __value__       
+---------  ----------------
+430        Fatima Hughes   
+336        Dmitriy Helgason
+572        Hisako Muhammad 
+431        Fatima Hughes   
+337        Dmitriy Helgason
+","__index__  __value__ 
+---------  ----------
+430        1561275.25
+336        1504306.34
+572        1476450.52
+431        1336581.43
+337        1292837.72
+"
+"__index__  __value__
+---------  ---------
+148        2020     
+560        2020     
+1164       2020     
+1826       2020     
+750        2020     
+","__index__  __value__ 
+---------  ----------
+148        Montserrat
+560        Montserrat
+1164       Montserrat
+1826       Montserrat
+750        Montserrat
+","__index__  __value__
+---------  ---------
+148        50       
+560        370      
+1164       404      
+1826       342      
+750        644      
+","__index__  __value__      
+---------  ---------------
+148        Anton David    
+560        Hiroko Shapiro 
+1164       Mohammad Baker 
+1826       Xiang Yao      
+750        Joyce Czarnecki
+","__index__  __value__ 
+---------  ----------
+148        1607829.78
+560        1558655.76
+1164       1546041.27
+1826       1491466.05
+750        1459589.77
+"
+"__index__  __value__
+---------  ---------
+1614       2020     
+1056       2020     
+1408       2020     
+1132       2020     
+1409       2021     
+","__index__  __value__ 
+---------  ----------
+1614       Mozambique
+1056       Mozambique
+1408       Mozambique
+1132       Mozambique
+1409       Mozambique
+","__index__  __value__
+---------  ---------
+1614       42       
+1056       554      
+1408       603      
+1132       534      
+1409       603      
+","__index__  __value__       
+---------  ----------------
+1614       Suman Baba      
+1056       Maryam Umar     
+1408       Robert Ber      
+1132       Miriam Borkowski
+1409       Robert Ber      
+","__index__  __value__ 
+---------  ----------
+1614       1589412.54
+1056       1553955.12
+1408       1478252.64
+1132       1426525.84
+1409       1402176.76
+"
+"__index__  __value__
+---------  ---------
+1516       2020     
+208        2020     
+1144       2020     
+1530       2020     
+962        2020     
+","__index__  __value__
+---------  ---------
+1516       Namibia  
+208        Namibia  
+1144       Namibia  
+1530       Namibia  
+962        Namibia  
+","__index__  __value__
+---------  ---------
+1516       512      
+208        251      
+1144       258      
+1530       221      
+962        402      
+","__index__  __value__        
+---------  -----------------
+1516       Shigeru Hasna    
+208        Brigitte Mustapha
+1144       Miriam Ortiz     
+1530       Shoji John       
+962        Lisa Achieng     
+","__index__  __value__ 
+---------  ----------
+1516       1828237.92
+208        1766467.99
+1144       1739272.71
+1530       1722481.23
+962        1666742.82
+"
+"__index__  __value__
+---------  ---------
+686        2020     
+1296       2020     
+1297       2021     
+340        2020     
+1768       2020     
+","__index__  __value__
+---------  ---------
+686        Nauru    
+1296       Nauru    
+1297       Nauru    
+340        Nauru    
+1768       Nauru    
+","__index__  __value__
+---------  ---------
+686        751      
+1296       889      
+1297       889      
+340        648      
+1768       31       
+","__index__  __value__       
+---------  ----------------
+686        Jerzy Du-Plessis
+1296       Peter Audu      
+1297       Peter Audu      
+340        Dmitry Einarsson
+1768       Vinod Herbulot  
+","__index__  __value__ 
+---------  ----------
+686        1703286.71
+1296       1554303.01
+1297       1539745.65
+340        1501736.79
+1768       1459532.35
+"
+"__index__  __value__
+---------  ---------
+1308       2020     
+932        2020     
+787        2021     
+1694       2020     
+1228       2020     
+","__index__  __value__    
+---------  -------------
+1308       New Caledonia
+932        New Caledonia
+787        New Caledonia
+1694       New Caledonia
+1228       New Caledonia
+","__index__  __value__
+---------  ---------
+1308       999      
+932        373      
+787        968      
+1694       921      
+1228       494      
+","__index__  __value__       
+---------  ----------------
+1308       Philip Salazar  
+932        Lijun Greenberg 
+787        Karen Nayak     
+1694       Teruko Jia      
+1228       Nittaya Kowalski
+","__index__  __value__ 
+---------  ----------
+1308       1526889.09
+932        1418354.64
+787        1362827.11
+1694       1296324.59
+1228       1284161.78
+"
+"__index__  __value__
+---------  ---------
+1356       2020     
+1740       2020     
+171        2021     
+327        2021     
+1081       2021     
+","__index__  __value__
+---------  ---------
+1356       Nigeria  
+1740       Nigeria  
+171        Nigeria  
+327        Nigeria  
+1081       Nigeria  
+","__index__  __value__
+---------  ---------
+1356       272      
+1740       746      
+171        533      
+327        971      
+1081       228      
+","__index__  __value__       
+---------  ----------------
+1356       Radha Kuznetsov 
+1740       Usman De-Bruijn 
+171        Avraham Smirnova
+327        Diego Oakley    
+1081       Meiyr Brown     
+","__index__  __value__ 
+---------  ----------
+1356       1596747.49
+1740       1550997.08
+171        1510389.83
+327        1440725.8 
+1081       1369357.91
+"
+"__index__  __value__
+---------  ---------
+62         2020     
+52         2020     
+620        2020     
+564        2020     
+876        2020     
+","__index__  __value__     
+---------  --------------
+62         Norfolk Island
+52         Norfolk Island
+620        Norfolk Island
+564        Norfolk Island
+876        Norfolk Island
+","__index__  __value__
+---------  ---------
+62         166      
+52         10       
+620        897      
+564        113      
+876        604      
+","__index__  __value__    
+---------  -------------
+62         Aminu Venter 
+52         Alina Chided 
+620        Isa Griffiths
+564        Hiromi Davies
+876        Krishna Juma 
+","__index__  __value__ 
+---------  ----------
+62         1549588.41
+52         1499313.07
+620        1463854.04
+564        1396605.8 
+876        1388980.51
+"
+"__index__  __value__
+---------  ---------
+1772       2020     
+1878       2020     
+1904       2020     
+1866       2020     
+728        2020     
+","__index__  __value__
+---------  ---------
+1772       Panama   
+1878       Panama   
+1904       Panama   
+1866       Panama   
+728        Panama   
+","__index__  __value__
+---------  ---------
+1772       175      
+1878       79       
+1904       758      
+1866       309      
+728        833      
+","__index__  __value__      
+---------  ---------------
+1772       Wanchai Wangui 
+1878       Yahaya Mahlangu
+1904       Yelena Das     
+1866       Xolani Zhou    
+728        Johannes Peters
+","__index__  __value__ 
+---------  ----------
+1772       1658504.48
+1878       1550922.7 
+1904       1527189.59
+1866       1500816.95
+728        1427459.07
+"
+"__index__  __value__
+---------  ---------
+1410       2020     
+999        2021     
+1564       2020     
+1156       2020     
+394        2020     
+","__index__  __value__
+---------  ---------
+1410       Paraguay 
+999        Paraguay 
+1564       Paraguay 
+1156       Paraguay 
+394        Paraguay 
+","__index__  __value__
+---------  ---------
+1410       952      
+999        307      
+1564       313      
+1156       160      
+394        761      
+","__index__  __value__          
+---------  -------------------
+1410       Robert Cruz        
+999        Mahmood Cheng      
+1564       Somchai Baloyi     
+1156       Miyoko Juma        
+394        Eugenia Kwiatkowski
+","__index__  __value__ 
+---------  ----------
+1410       1587787.63
+999        1563700.83
+1564       1466203.42
+1156       1390264.79
+394        1378606.5 
+"
+"__index__  __value__
+---------  ---------
+1014       2020     
+692        2020     
+1954       2020     
+1714       2020     
+1758       2020     
+","__index__  __value__
+---------  ---------
+1014       Peru     
+692        Peru     
+1954       Peru     
+1714       Peru     
+1758       Peru     
+","__index__  __value__
+---------  ---------
+1014       656      
+692        898      
+1954       527      
+1714       610      
+1758       958      
+","__index__  __value__      
+---------  ---------------
+1014       Manuel Ding    
+692        Jesus Fernandez
+1954       Yuko Hoffmann  
+1714       Thulani He     
+1758       Victor Cele    
+","__index__  __value__ 
+---------  ----------
+1014       1670242.14
+692        1648947.48
+1954       1646606.63
+1714       1577629.88
+1758       1296399.38
+"
+"__index__  __value__
+---------  ---------
+286        2020     
+726        2020     
+436        2020     
+950        2020     
+792        2020     
+","__index__  __value__       
+---------  ----------------
+286        Pitcairn Islands
+726        Pitcairn Islands
+436        Pitcairn Islands
+950        Pitcairn Islands
+792        Pitcairn Islands
+","__index__  __value__
+---------  ---------
+286        884      
+726        800      
+436        939      
+950        718      
+792        724      
+","__index__  __value__       
+---------  ----------------
+286        Christine Tang  
+726        Johannes Begam  
+436        Fatima Starr    
+950        Lindiwe Smirnova
+792        Karin Biswas    
+","__index__  __value__ 
+---------  ----------
+286        1730493.86
+726        1643379.03
+436        1548943.14
+950        1451986.15
+792        1389130.44
+"
+"__index__  __value__
+---------  ---------
+603        2021     
+458        2020     
+921        2021     
+989        2021     
+988        2020     
+","__index__  __value__  
+---------  -----------
+603        Puerto Rico
+458        Puerto Rico
+921        Puerto Rico
+989        Puerto Rico
+988        Puerto Rico
+","__index__  __value__
+---------  ---------
+603        336      
+458        692      
+921        519      
+989        809      
+988        809      
+","__index__  __value__               
+---------  ------------------------
+603        Ilya Garcia             
+458        Francisco-Javier Walters
+921        Leah Mazurek            
+989        Maciej Shevchenko       
+988        Maciej Shevchenko       
+","__index__  __value__ 
+---------  ----------
+603        1637833.09
+458        1583289.83
+921        1539294.02
+989        1532967.75
+988        1514538.24
+"
+"__index__  __value__
+---------  ---------
+1568       2020     
+1522       2020     
+596        2020     
+1360       2020     
+829        2021     
+","__index__  __value__
+---------  ---------
+1568       Qatar    
+1522       Qatar    
+596        Qatar    
+1360       Qatar    
+829        Qatar    
+","__index__  __value__
+---------  ---------
+1568       379      
+1522       153      
+596        837      
+1360       890      
+829        90       
+","__index__  __value__     
+---------  --------------
+1568       Somchit Liu   
+1522       Shizuko Bauer 
+596        Idris Maina   
+1360       Rafael Wanjala
+829        Keiko Jin     
+","__index__  __value__ 
+---------  ----------
+1568       1708219.67
+1522       1533374.07
+596        1511016.52
+1360       1470385.88
+829        1431290.43
+"
+"__index__  __value__
+---------  ---------
+1456       2020     
+210        2020     
+1100       2020     
+1720       2020     
+389        2021     
+","__index__  __value__
+---------  ---------
+1456       Romania  
+210        Romania  
+1100       Romania  
+1720       Romania  
+389        Romania  
+","__index__  __value__
+---------  ---------
+1456       403      
+210        89       
+1100       607      
+1720       222      
+389        483      
+","__index__  __value__       
+---------  ----------------
+1456       Sam Cheng       
+210        Brigitte Ngobeni
+1100       Michal Schwartz 
+1720       Tomiko Ntuli    
+389        Ester Ansari    
+","__index__  __value__ 
+---------  ----------
+1456       1755675.32
+210        1694434.9 
+1100       1650920.78
+1720       1594329.16
+389        1572062.18
+"
+"__index__  __value__
+---------  ---------
+1834       2020     
+1792       2020     
+870        2020     
+1810       2020     
+1926       2020     
+","__index__  __value__         
+---------  ------------------
+1834       Russian Federation
+1792       Russian Federation
+870        Russian Federation
+1810       Russian Federation
+1926       Russian Federation
+","__index__  __value__
+---------  ---------
+1834       508      
+1792       232      
+870        594      
+1810       409      
+1926       742      
+","__index__  __value__       
+---------  ----------------
+1834       Xiaoli Witkowski
+1792       Werner Ceng     
+870        Koshi Hussein   
+1810       Wirot Bos       
+1926       Yoko Zakharova  
+","__index__  __value__ 
+---------  ----------
+1834       1837244.91
+1792       1811073.63
+870        1676227.05
+1810       1555169.28
+1926       1473500.03
+"
+"__index__  __value__
+---------  ---------
+954        2020     
+1838       2020     
+1918       2020     
+546        2020     
+986        2020     
+","__index__  __value__       
+---------  ----------------
+954        Saint Barthelemy
+1838       Saint Barthelemy
+1918       Saint Barthelemy
+546        Saint Barthelemy
+986        Saint Barthelemy
+","__index__  __value__
+---------  ---------
+954        722      
+1838       709      
+1918       849      
+546        943      
+986        795      
+","__index__  __value__      
+---------  ---------------
+954        Ling Nel       
+1838       Xiaoping Kimani
+1918       Ying Vermeulen 
+546        Helmut Yuan    
+986        Maciej Rivera  
+","__index__  __value__ 
+---------  ----------
+954        1541479.66
+1838       1526574.71
+1918       1491437.26
+546        1483589.84
+986        1481037.81
+"
+"__index__  __value__
+---------  ---------
+698        2020     
+1326       2020     
+699        2021     
+1348       2020     
+2          2020     
+","__index__  __value__            
+---------  ---------------------
+698        Saint Kitts and Nevis
+1326       Saint Kitts and Nevis
+699        Saint Kitts and Nevis
+1348       Saint Kitts and Nevis
+2          Saint Kitts and Nevis
+","__index__  __value__
+---------  ---------
+698        806      
+1326       396      
+699        806      
+1348       766      
+2          886      
+","__index__  __value__     
+---------  --------------
+698        Jianguo Mahato
+1326       Prasit Esteban
+699        Jianguo Mahato
+1348       Qing Rogers   
+2          Abubakar Bevan
+","__index__  __value__ 
+---------  ----------
+698        1897441.71
+1326       1863090.84
+699        1759180.37
+1348       1725578.8 
+2          1476477.83
+"
+"__index__  __value__
+---------  ---------
+1686       2020     
+1114       2020     
+1514       2020     
+1140       2020     
+382        2020     
+","__index__  __value__   
+---------  ------------
+1686       Saint Martin
+1114       Saint Martin
+1514       Saint Martin
+1140       Saint Martin
+382        Saint Martin
+","__index__  __value__
+---------  ---------
+1686       832      
+1114       982      
+1514       693      
+1140       783      
+382        924      
+","__index__  __value__     
+---------  --------------
+1686       Tatyana Nguyen
+1114       Mikhail Feng  
+1514       Shay Sah      
+1140       Miriam Nakano 
+382        Erla Sokolova 
+","__index__  __value__ 
+---------  ----------
+1686       1586029.6 
+1114       1547904.44
+1514       1515213.11
+1140       1498758.88
+382        1463908.4 
+"
+"__index__  __value__
+---------  ---------
+1287       2021     
+1594       2020     
+754        2020     
+504        2020     
+190        2020     
+","__index__  __value__
+---------  ---------
+1287       Senegal  
+1594       Senegal  
+754        Senegal  
+504        Senegal  
+190        Senegal  
+","__index__  __value__
+---------  ---------
+1287       764      
+1594       663      
+754        515      
+504        873      
+190        695      
+","__index__  __value__      
+---------  ---------------
+1287       Pawel Martin   
+1594       Somsak Dijkstra
+754        Joyce Svoboda  
+504        Gunnar Rowlands
+190        Birgir Blom    
+","__index__  __value__ 
+---------  ----------
+1287       1710146.93
+1594       1694478.52
+754        1600772.26
+504        1583110.8 
+190        1540563   
+"
+"__index__  __value__
+---------  ---------
+293        2021     
+356        2020     
+1263       2021     
+352        2020     
+1028       2020     
+","__index__  __value__   
+---------  ------------
+293        Sierra Leone
+356        Sierra Leone
+1263       Sierra Leone
+352        Sierra Leone
+1028       Sierra Leone
+","__index__  __value__
+---------  ---------
+293        781      
+356        216      
+1263       593      
+352        172      
+1028       411      
+","__index__  __value__      
+---------  ---------------
+293        Claire Lange   
+356        Ekaterina Zhu  
+1263       Omer Lehmann   
+352        Ekaterina Inoue
+1028       Maria Ramos    
+","__index__  __value__ 
+---------  ----------
+293        1725124.72
+356        1619395.67
+1263       1588180.79
+352        1504394.3 
+1028       1432941.67
+"
+"__index__  __value__
+---------  ---------
+904        2020     
+534        2020     
+535        2021     
+1210       2020     
+90         2020     
+","__index__  __value__                 
+---------  --------------------------
+904        Slovakia (Slovak Republic)
+534        Slovakia (Slovak Republic)
+535        Slovakia (Slovak Republic)
+1210       Slovakia (Slovak Republic)
+90         Slovakia (Slovak Republic)
+","__index__  __value__
+---------  ---------
+904        98       
+534        531      
+535        531      
+1210       351      
+90         383      
+","__index__  __value__    
+---------  -------------
+904        Latda Feng   
+534        Hauwa Young  
+535        Hauwa Young  
+1210       Narong Pawlak
+90         Amnuai Saeli 
+","__index__  __value__ 
+---------  ----------
+904        1489360.14
+534        1465470.66
+535        1443298.82
+1210       1428185.58
+90         1382406.34
+"
+"__index__  __value__
+---------  ---------
+1244       2020     
+1012       2020     
+1013       2021     
+1468       2020     
+1245       2021     
+","__index__  __value__
+---------  ---------
+1244       Somalia  
+1012       Somalia  
+1013       Somalia  
+1468       Somalia  
+1245       Somalia  
+","__index__  __value__
+---------  ---------
+1244       591      
+1012       991      
+1013       991      
+1468       284      
+1245       591      
+","__index__  __value__        
+---------  -----------------
+1244       Nokuthula Moore  
+1012       Manju Schouten   
+1013       Manju Schouten   
+1468       Samran Du-Plessis
+1245       Nokuthula Moore  
+","__index__  __value__ 
+---------  ----------
+1244       1655043.02
+1012       1529276.02
+1013       1368590.48
+1468       1173104.97
+1245       1046949.27
+"
+"__index__  __value__
+---------  ---------
+1388       2020     
+1435       2021     
+1142       2020     
+942        2020     
+884        2020     
+","__index__  __value__
+---------  ---------
+1388       Spain    
+1435       Spain    
+1142       Spain    
+942        Spain    
+884        Spain    
+","__index__  __value__
+---------  ---------
+1388       302      
+1435       277      
+1142       200      
+942        376      
+884        560      
+","__index__  __value__       
+---------  ----------------
+1388       Rattana Lis     
+1435       Rut Ceng        
+1142       Miriam Ohana    
+942        Lilja Maeda     
+884        Krzysztof Baloyi
+","__index__  __value__ 
+---------  ----------
+1388       1877981.58
+1435       1758021.86
+1142       1654072.66
+942        1637268.59
+884        1632235.59
+"
+"__index__  __value__
+---------  ---------
+1646       2020     
+777        2021     
+45         2021     
+1377       2021     
+1798       2020     
+","__index__  __value__
+---------  ---------
+1646       Sri Lanka
+777        Sri Lanka
+45         Sri Lanka
+1377       Sri Lanka
+1798       Sri Lanka
+","__index__  __value__
+---------  ---------
+1646       705      
+777        678      
+45         780      
+1377       78       
+1798       708      
+","__index__  __value__     
+---------  --------------
+1646       Sunthon Rani  
+777        Kamil Hartmann
+45         Alexey Ahmad  
+1377       Rakesh Bunmi  
+1798       Werner Umar   
+","__index__  __value__ 
+---------  ----------
+1646       1611304.61
+777        1560824.01
+45         1527078.25
+1377       1442465.15
+1798       1439896.47
+"
+"__index__  __value__
+---------  ---------
+720        2020     
+716        2020     
+1312       2020     
+342        2020     
+1669       2021     
+","__index__  __value__  
+---------  -----------
+720        Switzerland
+716        Switzerland
+1312       Switzerland
+342        Switzerland
+1669       Switzerland
+","__index__  __value__
+---------  ---------
+720        694      
+716        140      
+1312       728      
+342        895      
+1669       236      
+","__index__  __value__     
+---------  --------------
+720        Johanna Davies
+716        Joanna Weber  
+1312       Pieter Njeri  
+342        Dorota Eliyahu
+1669       Svetlana Sekh 
+","__index__  __value__ 
+---------  ----------
+720        1623264.33
+716        1442554.48
+1312       1418972.93
+342        1382532.01
+1669       1350859.22
+"
+"__index__  __value__
+---------  ---------
+1454       2020     
+518        2020     
+328        2020     
+370        2020     
+329        2021     
+","__index__  __value__           
+---------  --------------------
+1454       Syrian Arab Republic
+518        Syrian Arab Republic
+328        Syrian Arab Republic
+370        Syrian Arab Republic
+329        Syrian Arab Republic
+","__index__  __value__
+---------  ---------
+1454       680      
+518        466      
+328        35       
+370        424      
+329        35       
+","__index__  __value__   
+---------  ------------
+1454       Salisu Omar 
+518        Hans Zajac  
+328        Dinesh Kumar
+370        Elke Gu     
+329        Dinesh Kumar
+","__index__  __value__ 
+---------  ----------
+1454       1566444.16
+518        1473866.01
+328        1405501.46
+370        1377147.45
+329        1355200.3 
+"
+"__index__  __value__
+---------  ---------
+1944       2020     
+214        2020     
+1945       2021     
+344        2020     
+26         2020     
+","__index__  __value__ 
+---------  ----------
+1944       Tajikistan
+214        Tajikistan
+1945       Tajikistan
+344        Tajikistan
+26         Tajikistan
+","__index__  __value__
+---------  ---------
+1944       702      
+214        975      
+1945       702      
+344        308      
+26         452      
+","__index__  __value__      
+---------  ---------------
+1944       Yoshio Tal     
+214        Bunmi Griffiths
+1945       Yoshio Tal     
+344        Edda Krawczyk  
+26         Akira Yang     
+","__index__  __value__ 
+---------  ----------
+1944       1701627.88
+214        1674805.94
+1945       1658054.87
+344        1622490.5 
+26         1602078.23
+"
+"__index__  __value__
+---------  ---------
+856        2020     
+460        2020     
+221        2021     
+516        2020     
+1196       2020     
+","__index__  __value__
+---------  ---------
+856        Tanzania 
+460        Tanzania 
+221        Tanzania 
+516        Tanzania 
+1196       Tanzania 
+","__index__  __value__
+---------  ---------
+856        875      
+460        71       
+221        442      
+516        538      
+1196       55       
+","__index__  __value__      
+---------  ---------------
+856        Klaus Clarke   
+460        Frank Avraham  
+221        Bunmi Yin      
+516        Hanna Ono      
+1196       Nadezhda Wambua
+","__index__  __value__ 
+---------  ----------
+856        1680205.59
+460        1545820.53
+221        1516062.39
+516        1508119.1 
+1196       1462362.66
+"
+"__index__  __value__
+---------  ---------
+1852       2020     
+1420       2020     
+1161       2021     
+582        2020     
+1404       2020     
+","__index__  __value__          
+---------  -------------------
+1852       Trinidad and Tobago
+1420       Trinidad and Tobago
+1161       Trinidad and Tobago
+582        Trinidad and Tobago
+1404       Trinidad and Tobago
+","__index__  __value__
+---------  ---------
+1852       26       
+1420       450      
+1161       530      
+582        992      
+1404       400      
+","__index__  __value__     
+---------  --------------
+1852       Xiaoyan Powell
+1420       Rong Young    
+1161       Mo Rabiu      
+582        Hui Harrison  
+1404       Rita Gao      
+","__index__  __value__ 
+---------  ----------
+1852       2089659.93
+1420       2071677.3 
+1161       1680176.79
+582        1534652.17
+1404       1478888.45
+"
+"__index__  __value__
+---------  ---------
+650        2020     
+1008       2020     
+651        2021     
+1432       2020     
+1009       2021     
+","__index__  __value__
+---------  ---------
+650        Tunisia  
+1008       Tunisia  
+651        Tunisia  
+1432       Tunisia  
+1009       Tunisia  
+","__index__  __value__
+---------  ---------
+650        618      
+1008       285      
+651        618      
+1432       203      
+1009       285      
+","__index__  __value__       
+---------  ----------------
+650        Jakub Petrov    
+1008       Manfred Majewski
+651        Jakub Petrov    
+1432       Rut Braun       
+1009       Manfred Majewski
+","__index__  __value__ 
+---------  ----------
+650        1842791.09
+1008       1588492.29
+651        1467182.12
+1432       1438389.56
+1009       1428039.91
+"
+"__index__  __value__
+---------  ---------
+1880       2020     
+800        2020     
+79         2021     
+78         2020     
+1856       2020     
+","__index__  __value__     
+---------  --------------
+1880       United Kingdom
+800        United Kingdom
+79         United Kingdom
+78         United Kingdom
+1856       United Kingdom
+","__index__  __value__
+---------  ---------
+1880       929      
+800        518      
+79         92       
+78         92       
+1856       688      
+","__index__  __value__         
+---------  ------------------
+1880       Yahaya Taylor     
+800        Karl-Heinz Alvarez
+79         Amnuai Frolova    
+78         Amnuai Frolova    
+1856       Xin Sokolova      
+","__index__  __value__ 
+---------  ----------
+1880       2184090.54
+800        1566180.87
+79         1392377.77
+78         1379853.7 
+1856       1327256.86
+"
+"__index__  __value__
+---------  ---------
+1194       2020     
+1518       2020     
+114        2020     
+1519       2021     
+1076       2020     
+","__index__  __value__               
+---------  ------------------------
+1194       United States of America
+1518       United States of America
+114        United States of America
+1519       United States of America
+1076       United States of America
+","__index__  __value__
+---------  ---------
+1194       600      
+1518       910      
+114        658      
+1519       910      
+1076       24       
+","__index__  __value__      
+---------  ---------------
+1194       Nadezhda Vargas
+1518       Shigeru Khatoon
+114        Andrea Smoakley
+1519       Shigeru Khatoon
+1076       Matthew Ward   
+","__index__  __value__ 
+---------  ----------
+1194       1583287.24
+1518       1507991.01
+114        1493818.88
+1519       1461639.89
+1076       1406240.94
+"
+"__index__  __value__
+---------  ---------
+1338       2020     
+1216       2020     
+514        2020     
+1542       2020     
+1224       2020     
+","__index__  __value__
+---------  ---------
+1338       Uruguay  
+1216       Uruguay  
+514        Uruguay  
+1542       Uruguay  
+1224       Uruguay  
+","__index__  __value__
+---------  ---------
+1338       238      
+1216       525      
+514        408      
+1542       301      
+1224       599      
+","__index__  __value__      
+---------  ---------------
+1338       Pricha Ntuli   
+1216       Ning Kondo     
+514        Haiyan Robinson
+1542       Sibongile Parry
+1224       Ning Watkins   
+","__index__  __value__ 
+---------  ----------
+1338       1533623.17
+1216       1417739.8 
+514        1397677.62
+1542       1365144.08
+1224       1330223.16
+"
+"__index__  __value__
+---------  ---------
+88         2020     
+664        2020     
+746        2020     
+747        2021     
+1118       2020     
+","__index__  __value__
+---------  ---------
+88         Vanuatu  
+664        Vanuatu  
+746        Vanuatu  
+747        Vanuatu  
+1118       Vanuatu  
+","__index__  __value__
+---------  ---------
+88         310      
+664        335      
+746        754      
+747        754      
+1118       662      
+","__index__  __value__         
+---------  ------------------
+88         Amnuai Radebe     
+664        Jane Pillay       
+746        Jose-Maria Salazar
+747        Jose-Maria Salazar
+1118       Mikhail Pietrzak  
+","__index__  __value__ 
+---------  ----------
+88         1767446.23
+664        1461891.55
+746        1459761.25
+747        1447000.14
+1118       1439282.75
+"
+"__index__  __value__
+---------  ---------
+48         2020     
+49         2021     
+1584       2020     
+76         2020     
+797        2021     
+","__index__  __value__           
+---------  --------------------
+48         Virgin Islands, U.S.
+49         Virgin Islands, U.S.
+1584       Virgin Islands, U.S.
+76         Virgin Islands, U.S.
+797        Virgin Islands, U.S.
+","__index__  __value__
+---------  ---------
+48         759      
+49         759      
+1584       588      
+76         816      
+797        430      
+","__index__  __value__        
+---------  -----------------
+48         Ali Romanov      
+49         Ali Romanov      
+1584       Sommai Navarro   
+76         Amnuai Du-Plessis
+797        Karl Lee         
+","__index__  __value__ 
+---------  ----------
+48         1621689.01
+49         1596983.41
+1584       1515827.77
+76         1459385.5 
+797        1450177.4 
+"
+"__index__  __value__
+---------  ---------
+1094       2020     
+413        2021     
+586        2020     
+928        2020     
+1325       2021     
+","__index__  __value__        
+---------  -----------------
+1094       Wallis and Futuna
+413        Wallis and Futuna
+586        Wallis and Futuna
+928        Wallis and Futuna
+1325       Wallis and Futuna
+","__index__  __value__
+---------  ---------
+1094       605      
+413        730      
+586        606      
+928        267      
+1325       385      
+","__index__  __value__      
+---------  ---------------
+1094       Michael Dumont 
+413        Evgeniy Mhlongo
+586        Hui Janssen    
+928        Lihua Achieng  
+1325       Ping Gao       
+","__index__  __value__ 
+---------  ----------
+1094       1719541.78
+413        1600329.84
+586        1596520.01
+928        1594801.05
+1325       1394307.14
+"
